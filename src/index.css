@@ -214,3 +214,96 @@ body::before {
 }
 .animate-sparkle-delay { animation-delay: 0.5s; }
 .animate-sparkle-delay-2 { animation-delay: 1s; }
+
+/* Touch ripple */
+@keyframes ripple-expand {
+  0% { transform: scale(0); opacity: 0.35; }
+  100% { transform: scale(4); opacity: 0; }
+}
+
+.ripple-circle {
+  position: absolute;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-left: -20px;
+  margin-top: -20px;
+  background: var(--color-accent);
+  pointer-events: none;
+  animation: ripple-expand 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Spring bounce for choice buttons */
+@keyframes spring-in {
+  0% { opacity: 0; transform: translateY(20px) scale(0.95); }
+  60% { transform: translateY(-4px) scale(1.01); }
+  80% { transform: translateY(2px) scale(0.995); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.animate-spring-in {
+  opacity: 0;
+  animation: spring-in 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Squish press for buttons */
+.squish-press:active {
+  transform: scale(0.95) !important;
+  transition: transform 0.08s ease-out !important;
+}
+
+/* Swipe hint arrow */
+@keyframes swipe-hint {
+  0%, 100% { transform: translateX(0); opacity: 0.3; }
+  50% { transform: translateX(-8px); opacity: 0.7; }
+}
+
+.animate-swipe-hint {
+  animation: swipe-hint 1.5s ease-in-out infinite;
+}
+
+/* Correct pulse border */
+@keyframes correct-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(71, 255, 178, 0.4); }
+  70% { box-shadow: 0 0 0 8px rgba(71, 255, 178, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(71, 255, 178, 0); }
+}
+
+.animate-correct-pulse {
+  animation: correct-pulse 0.6s ease-out;
+}
+
+/* Wrong crack effect */
+@keyframes crack-shake {
+  0% { transform: translateX(0) rotate(0deg); }
+  10% { transform: translateX(-10px) rotate(-2deg); }
+  20% { transform: translateX(8px) rotate(1.5deg); }
+  30% { transform: translateX(-6px) rotate(-1deg); }
+  40% { transform: translateX(4px) rotate(0.5deg); }
+  50% { transform: translateX(-2px); }
+  100% { transform: translateX(0); }
+}
+
+.animate-crack {
+  animation: crack-shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97);
+}
+
+/* Combo energy bar at right edge */
+@keyframes energy-pulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+.energy-bar-glow {
+  animation: energy-pulse 0.8s ease-in-out infinite;
+}
+
+/* Card exit animation for swipe */
+@keyframes card-exit-left {
+  0% { transform: translateX(0) rotate(0deg); opacity: 1; }
+  100% { transform: translateX(-120%) rotate(-5deg); opacity: 0; }
+}
+
+.animate-card-exit {
+  animation: card-exit-left 0.3s ease-in forwards;
+}
