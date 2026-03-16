@@ -1,0 +1,850 @@
+[
+  {
+    "id": "look_up",
+    "verb": "look up",
+    "meaning_ja": "（辞書などで）調べる",
+    "example": "I need to look up this word in the dictionary.",
+    "example_ja": "この単語を辞書で調べる必要がある。",
+    "choices": ["（辞書などで）調べる", "見上げる", "探し回る", "見下ろす"]
+  },
+  {
+    "id": "give_up",
+    "verb": "give up",
+    "meaning_ja": "あきらめる",
+    "example": "Don't give up on your dreams.",
+    "example_ja": "夢をあきらめないで。",
+    "choices": ["あきらめる", "与える", "返す", "片付ける"]
+  },
+  {
+    "id": "turn_on",
+    "verb": "turn on",
+    "meaning_ja": "（電源を）つける",
+    "example": "Can you turn on the light?",
+    "example_ja": "電気をつけてくれる？",
+    "choices": ["（電源を）つける", "回す", "曲がる", "消す"]
+  },
+  {
+    "id": "turn_off",
+    "verb": "turn off",
+    "meaning_ja": "（電源を）消す",
+    "example": "Please turn off your phone during the meeting.",
+    "example_ja": "会議中は電話を消してください。",
+    "choices": ["（電源を）消す", "曲がる", "つける", "回転する"]
+  },
+  {
+    "id": "pick_up",
+    "verb": "pick up",
+    "meaning_ja": "拾う・迎えに行く",
+    "example": "I'll pick up my daughter from school.",
+    "example_ja": "娘を学校に迎えに行きます。",
+    "choices": ["拾う・迎えに行く", "選ぶ", "落とす", "置く"]
+  },
+  {
+    "id": "put_down",
+    "verb": "put down",
+    "meaning_ja": "（物を）置く",
+    "example": "Put down your phone and listen.",
+    "example_ja": "スマホを置いて聞きなさい。",
+    "choices": ["（物を）置く", "持ち上げる", "片付ける", "書き留める"]
+  },
+  {
+    "id": "get_up",
+    "verb": "get up",
+    "meaning_ja": "起きる",
+    "example": "I get up at 6 every morning.",
+    "example_ja": "毎朝6時に起きます。",
+    "choices": ["起きる", "出かける", "到着する", "立ち去る"]
+  },
+  {
+    "id": "wake_up",
+    "verb": "wake up",
+    "meaning_ja": "目を覚ます",
+    "example": "The alarm woke me up at 5 a.m.",
+    "example_ja": "朝5時にアラームで目が覚めた。",
+    "choices": ["目を覚ます", "起き上がる", "寝る", "横になる"]
+  },
+  {
+    "id": "take_off",
+    "verb": "take off",
+    "meaning_ja": "脱ぐ・離陸する",
+    "example": "Please take off your shoes at the door.",
+    "example_ja": "玄関で靴を脱いでください。",
+    "choices": ["脱ぐ・離陸する", "着る", "持っていく", "片付ける"]
+  },
+  {
+    "id": "put_on",
+    "verb": "put on",
+    "meaning_ja": "着る・身につける",
+    "example": "Put on your jacket, it's cold outside.",
+    "example_ja": "上着を着て、外は寒いよ。",
+    "choices": ["着る・身につける", "脱ぐ", "置く", "片付ける"]
+  },
+  {
+    "id": "come_back",
+    "verb": "come back",
+    "meaning_ja": "戻ってくる",
+    "example": "When will you come back from your trip?",
+    "example_ja": "旅行からいつ戻ってきますか？",
+    "choices": ["戻ってくる", "出発する", "到着する", "通り過ぎる"]
+  },
+  {
+    "id": "go_out",
+    "verb": "go out",
+    "meaning_ja": "外出する",
+    "example": "Let's go out for dinner tonight.",
+    "example_ja": "今夜は外食しよう。",
+    "choices": ["外出する", "帰宅する", "入る", "通り抜ける"]
+  },
+  {
+    "id": "find_out",
+    "verb": "find out",
+    "meaning_ja": "見つけ出す・発見する",
+    "example": "I need to find out what happened.",
+    "example_ja": "何が起きたのか調べなければならない。",
+    "choices": ["見つけ出す・発見する", "探す", "忘れる", "隠す"]
+  },
+  {
+    "id": "figure_out",
+    "verb": "figure out",
+    "meaning_ja": "理解する・解決する",
+    "example": "I can't figure out how to use this app.",
+    "example_ja": "このアプリの使い方がわからない。",
+    "choices": ["理解する・解決する", "計算する", "描く", "想像する"]
+  },
+  {
+    "id": "bring_up",
+    "verb": "bring up",
+    "meaning_ja": "話題に出す・育てる",
+    "example": "She brought up an interesting point in the meeting.",
+    "example_ja": "彼女は会議で興味深い点を指摘した。",
+    "choices": ["話題に出す・育てる", "持ってくる", "運ぶ", "下ろす"]
+  },
+  {
+    "id": "point_out",
+    "verb": "point out",
+    "meaning_ja": "指摘する",
+    "example": "He pointed out several errors in the report.",
+    "example_ja": "彼はレポートの中のいくつかの誤りを指摘した。",
+    "choices": ["指摘する", "示す", "注目する", "無視する"]
+  },
+  {
+    "id": "come_up_with",
+    "verb": "come up with",
+    "meaning_ja": "思いつく",
+    "example": "We need to come up with a new plan.",
+    "example_ja": "新しい計画を思いつく必要がある。",
+    "choices": ["思いつく", "追いつく", "出てくる", "近づく"]
+  },
+  {
+    "id": "get_along",
+    "verb": "get along",
+    "meaning_ja": "仲良くする",
+    "example": "Do you get along with your neighbors?",
+    "example_ja": "ご近所さんとは仲良くしていますか？",
+    "choices": ["仲良くする", "進む", "離れる", "我慢する"]
+  },
+  {
+    "id": "break_up",
+    "verb": "break up",
+    "meaning_ja": "別れる・解散する",
+    "example": "They broke up after three years together.",
+    "example_ja": "3年付き合った後、彼らは別れた。",
+    "choices": ["別れる・解散する", "壊す", "割る", "始める"]
+  },
+  {
+    "id": "make_up",
+    "verb": "make up",
+    "meaning_ja": "仲直りする・でっち上げる",
+    "example": "They had a fight but quickly made up.",
+    "example_ja": "彼らは喧嘩したがすぐに仲直りした。",
+    "choices": ["仲直りする・でっち上げる", "化粧する", "作る", "壊す"]
+  },
+  {
+    "id": "look_after",
+    "verb": "look after",
+    "meaning_ja": "世話をする",
+    "example": "Can you look after my cat while I'm away?",
+    "example_ja": "留守の間、猫の世話をしてくれますか？",
+    "choices": ["世話をする", "探す", "見つける", "追いかける"]
+  },
+  {
+    "id": "grow_up",
+    "verb": "grow up",
+    "meaning_ja": "成長する・大人になる",
+    "example": "I grew up in a small town.",
+    "example_ja": "小さな町で育ちました。",
+    "choices": ["成長する・大人になる", "大きくなる", "伸びる", "増える"]
+  },
+  {
+    "id": "keep_up",
+    "verb": "keep up",
+    "meaning_ja": "ついていく・維持する",
+    "example": "It's hard to keep up with the latest technology.",
+    "example_ja": "最新技術についていくのは大変だ。",
+    "choices": ["ついていく・維持する", "保管する", "守る", "止める"]
+  },
+  {
+    "id": "catch_up",
+    "verb": "catch up",
+    "meaning_ja": "追いつく",
+    "example": "I need to catch up on my homework.",
+    "example_ja": "宿題に追いつかなければならない。",
+    "choices": ["追いつく", "捕まえる", "逃げる", "飛び越える"]
+  },
+  {
+    "id": "set_up",
+    "verb": "set up",
+    "meaning_ja": "設置する・準備する",
+    "example": "Let's set up the meeting room.",
+    "example_ja": "会議室を準備しよう。",
+    "choices": ["設置する・準備する", "片付ける", "座る", "置く"]
+  },
+  {
+    "id": "carry_out",
+    "verb": "carry out",
+    "meaning_ja": "実行する",
+    "example": "We need to carry out the plan carefully.",
+    "example_ja": "計画を慎重に実行する必要がある。",
+    "choices": ["実行する", "運ぶ", "外に出す", "捨てる"]
+  },
+  {
+    "id": "work_out",
+    "verb": "work out",
+    "meaning_ja": "運動する・うまくいく",
+    "example": "I work out at the gym three times a week.",
+    "example_ja": "週3回ジムで運動しています。",
+    "choices": ["運動する・うまくいく", "働く", "解決する", "出勤する"]
+  },
+  {
+    "id": "show_up",
+    "verb": "show up",
+    "meaning_ja": "現れる・姿を見せる",
+    "example": "He didn't show up for the party.",
+    "example_ja": "彼はパーティーに現れなかった。",
+    "choices": ["現れる・姿を見せる", "見せる", "表示する", "消える"]
+  },
+  {
+    "id": "drop_off",
+    "verb": "drop off",
+    "meaning_ja": "降ろす・届ける",
+    "example": "I'll drop off the package at your office.",
+    "example_ja": "荷物をオフィスに届けます。",
+    "choices": ["降ろす・届ける", "落とす", "拾う", "捨てる"]
+  },
+  {
+    "id": "run_into",
+    "verb": "run into",
+    "meaning_ja": "偶然出会う",
+    "example": "I ran into my old friend at the supermarket.",
+    "example_ja": "スーパーで旧友にばったり会った。",
+    "choices": ["偶然出会う", "走る", "ぶつかる", "逃げる"]
+  },
+  {
+    "id": "calm_down",
+    "verb": "calm down",
+    "meaning_ja": "落ち着く",
+    "example": "Please calm down and tell me what happened.",
+    "example_ja": "落ち着いて何が起きたか教えて。",
+    "choices": ["落ち着く", "静かにする", "座る", "横になる"]
+  },
+  {
+    "id": "cheer_up",
+    "verb": "cheer up",
+    "meaning_ja": "元気づける・元気を出す",
+    "example": "Cheer up! Things will get better.",
+    "example_ja": "元気出して！きっと良くなるよ。",
+    "choices": ["元気づける・元気を出す", "応援する", "叫ぶ", "笑う"]
+  },
+  {
+    "id": "freak_out",
+    "verb": "freak out",
+    "meaning_ja": "パニックになる",
+    "example": "Don't freak out, it's just a spider.",
+    "example_ja": "パニックにならないで、ただのクモだよ。",
+    "choices": ["パニックになる", "怒る", "驚く", "泣く"]
+  },
+  {
+    "id": "pass_out",
+    "verb": "pass out",
+    "meaning_ja": "気絶する・配る",
+    "example": "She passed out from the heat.",
+    "example_ja": "彼女は暑さで気絶した。",
+    "choices": ["気絶する・配る", "通り過ぎる", "合格する", "渡す"]
+  },
+  {
+    "id": "burn_out",
+    "verb": "burn out",
+    "meaning_ja": "燃え尽きる",
+    "example": "Many teachers burn out after a few years.",
+    "example_ja": "多くの教師は数年で燃え尽きる。",
+    "choices": ["燃え尽きる", "燃える", "消す", "火をつける"]
+  },
+  {
+    "id": "turn_out",
+    "verb": "turn out",
+    "meaning_ja": "結局〜だとわかる",
+    "example": "It turned out that he was right all along.",
+    "example_ja": "結局彼がずっと正しかったことがわかった。",
+    "choices": ["結局〜だとわかる", "外に出る", "回す", "消す"]
+  },
+  {
+    "id": "end_up",
+    "verb": "end up",
+    "meaning_ja": "結局〜になる",
+    "example": "We ended up staying home because of the rain.",
+    "example_ja": "雨のせいで結局家にいることになった。",
+    "choices": ["結局〜になる", "終わる", "やめる", "始める"]
+  },
+  {
+    "id": "come_across",
+    "verb": "come across",
+    "meaning_ja": "偶然見つける",
+    "example": "I came across an interesting article online.",
+    "example_ja": "ネットで面白い記事を偶然見つけた。",
+    "choices": ["偶然見つける", "横切る", "近づく", "離れる"]
+  },
+  {
+    "id": "look_forward_to",
+    "verb": "look forward to",
+    "meaning_ja": "楽しみにする",
+    "example": "I'm looking forward to the vacation.",
+    "example_ja": "休暇を楽しみにしています。",
+    "choices": ["楽しみにする", "前を見る", "期待しない", "心配する"]
+  },
+  {
+    "id": "deal_with",
+    "verb": "deal with",
+    "meaning_ja": "対処する",
+    "example": "We need to deal with this problem now.",
+    "example_ja": "今すぐこの問題に対処する必要がある。",
+    "choices": ["対処する", "取引する", "配る", "扱う"]
+  },
+  {
+    "id": "put_up_with",
+    "verb": "put up with",
+    "meaning_ja": "我慢する",
+    "example": "I can't put up with this noise anymore.",
+    "example_ja": "この騒音にはもう我慢できない。",
+    "choices": ["我慢する", "置く", "立てる", "上げる"]
+  },
+  {
+    "id": "get_rid_of",
+    "verb": "get rid of",
+    "meaning_ja": "取り除く・処分する",
+    "example": "We need to get rid of these old boxes.",
+    "example_ja": "これらの古い箱を処分する必要がある。",
+    "choices": ["取り除く・処分する", "手に入れる", "乗る", "隠す"]
+  },
+  {
+    "id": "look_down_on",
+    "verb": "look down on",
+    "meaning_ja": "見下す",
+    "example": "Nobody should look down on others.",
+    "example_ja": "誰も他人を見下すべきではない。",
+    "choices": ["見下す", "見下ろす", "尊敬する", "無視する"]
+  },
+  {
+    "id": "make_up_for",
+    "verb": "make up for",
+    "meaning_ja": "埋め合わせる",
+    "example": "He tried to make up for his mistake.",
+    "example_ja": "彼は間違いを埋め合わせようとした。",
+    "choices": ["埋め合わせる", "作り上げる", "仲直りする", "化粧する"]
+  },
+  {
+    "id": "live_up_to",
+    "verb": "live up to",
+    "meaning_ja": "期待に応える",
+    "example": "The movie didn't live up to my expectations.",
+    "example_ja": "その映画は期待に応えなかった。",
+    "choices": ["期待に応える", "生きていく", "住み続ける", "追いつく"]
+  },
+  {
+    "id": "run_out_of",
+    "verb": "run out of",
+    "meaning_ja": "使い果たす",
+    "example": "We've run out of milk.",
+    "example_ja": "牛乳がなくなった。",
+    "choices": ["使い果たす", "走り去る", "逃げ出す", "飛び出す"]
+  },
+  {
+    "id": "look_up_to",
+    "verb": "look up to",
+    "meaning_ja": "尊敬する",
+    "example": "Many children look up to their parents.",
+    "example_ja": "多くの子供は親を尊敬している。",
+    "choices": ["尊敬する", "見上げる", "調べる", "見下す"]
+  },
+  {
+    "id": "get_over",
+    "verb": "get over",
+    "meaning_ja": "乗り越える・回復する",
+    "example": "It took me a long time to get over the flu.",
+    "example_ja": "インフルエンザから回復するのに長い時間がかかった。",
+    "choices": ["乗り越える・回復する", "超える", "渡る", "避ける"]
+  },
+  {
+    "id": "go_through",
+    "verb": "go through",
+    "meaning_ja": "経験する・通り抜ける",
+    "example": "She went through a difficult time last year.",
+    "example_ja": "彼女は去年困難な時期を経験した。",
+    "choices": ["経験する・通り抜ける", "行く", "通過する", "終わる"]
+  },
+  {
+    "id": "hang_out",
+    "verb": "hang out",
+    "meaning_ja": "遊ぶ・ぶらぶらする",
+    "example": "Let's hang out this weekend.",
+    "example_ja": "今週末遊ぼう。",
+    "choices": ["遊ぶ・ぶらぶらする", "ぶら下がる", "干す", "出かける"]
+  },
+  {
+    "id": "call_off",
+    "verb": "call off",
+    "meaning_ja": "中止する",
+    "example": "They called off the game due to rain.",
+    "example_ja": "雨のため試合は中止になった。",
+    "choices": ["中止する", "電話する", "呼ぶ", "延期する"]
+  },
+  {
+    "id": "cut_down_on",
+    "verb": "cut down on",
+    "meaning_ja": "減らす",
+    "example": "You should cut down on sugar.",
+    "example_ja": "砂糖を減らした方がいいよ。",
+    "choices": ["減らす", "切る", "倒す", "やめる"]
+  },
+  {
+    "id": "look_into",
+    "verb": "look into",
+    "meaning_ja": "調査する",
+    "example": "The police are looking into the case.",
+    "example_ja": "警察はその事件を調査している。",
+    "choices": ["調査する", "中を見る", "覗く", "探す"]
+  },
+  {
+    "id": "take_over",
+    "verb": "take over",
+    "meaning_ja": "引き継ぐ・支配する",
+    "example": "She took over the company after her father retired.",
+    "example_ja": "父が引退した後、彼女が会社を引き継いだ。",
+    "choices": ["引き継ぐ・支配する", "持っていく", "奪う", "超える"]
+  },
+  {
+    "id": "give_in",
+    "verb": "give in",
+    "meaning_ja": "譲歩する・屈する",
+    "example": "After hours of arguing, he finally gave in.",
+    "example_ja": "何時間も議論した後、彼はついに譲歩した。",
+    "choices": ["譲歩する・屈する", "与える", "入れる", "あきらめる"]
+  },
+  {
+    "id": "throw_away",
+    "verb": "throw away",
+    "meaning_ja": "捨てる",
+    "example": "Don't throw away that receipt.",
+    "example_ja": "そのレシートを捨てないで。",
+    "choices": ["捨てる", "投げる", "飛ばす", "片付ける"]
+  },
+  {
+    "id": "fill_in",
+    "verb": "fill in",
+    "meaning_ja": "記入する",
+    "example": "Please fill in this form.",
+    "example_ja": "この用紙に記入してください。",
+    "choices": ["記入する", "満たす", "埋める", "入れる"]
+  },
+  {
+    "id": "hand_in",
+    "verb": "hand in",
+    "meaning_ja": "提出する",
+    "example": "Don't forget to hand in your homework.",
+    "example_ja": "宿題を提出するのを忘れないで。",
+    "choices": ["提出する", "渡す", "手に入れる", "返す"]
+  },
+  {
+    "id": "hold_on",
+    "verb": "hold on",
+    "meaning_ja": "待つ・しっかりつかまる",
+    "example": "Hold on, I'll be right back.",
+    "example_ja": "待って、すぐ戻るから。",
+    "choices": ["待つ・しっかりつかまる", "持つ", "抱きしめる", "放す"]
+  },
+  {
+    "id": "move_on",
+    "verb": "move on",
+    "meaning_ja": "先へ進む・気持ちを切り替える",
+    "example": "It's time to move on and forget the past.",
+    "example_ja": "もう先に進んで過去を忘れる時だ。",
+    "choices": ["先へ進む・気持ちを切り替える", "引っ越す", "動く", "戻る"]
+  },
+  {
+    "id": "check_in",
+    "verb": "check in",
+    "meaning_ja": "チェックインする",
+    "example": "We need to check in at the hotel by 3 p.m.",
+    "example_ja": "午後3時までにホテルにチェックインする必要がある。",
+    "choices": ["チェックインする", "確認する", "調べる", "チェックアウトする"]
+  },
+  {
+    "id": "check_out",
+    "verb": "check out",
+    "meaning_ja": "チェックアウトする・見てみる",
+    "example": "Check out this cool website!",
+    "example_ja": "このかっこいいウェブサイト見てみて！",
+    "choices": ["チェックアウトする・見てみる", "確認する", "出る", "調べる"]
+  },
+  {
+    "id": "sign_up",
+    "verb": "sign up",
+    "meaning_ja": "登録する・申し込む",
+    "example": "I signed up for a yoga class.",
+    "example_ja": "ヨガのクラスに申し込んだ。",
+    "choices": ["登録する・申し込む", "サインする", "書く", "辞める"]
+  },
+  {
+    "id": "log_in",
+    "verb": "log in",
+    "meaning_ja": "ログインする",
+    "example": "You need to log in to access your account.",
+    "example_ja": "アカウントにアクセスするにはログインが必要です。",
+    "choices": ["ログインする", "記録する", "入る", "ログアウトする"]
+  },
+  {
+    "id": "back_up",
+    "verb": "back up",
+    "meaning_ja": "バックアップする・支持する",
+    "example": "Make sure to back up your files regularly.",
+    "example_ja": "定期的にファイルをバックアップしてください。",
+    "choices": ["バックアップする・支持する", "戻る", "後退する", "逆転する"]
+  },
+  {
+    "id": "break_down",
+    "verb": "break down",
+    "meaning_ja": "故障する・崩壊する",
+    "example": "My car broke down on the highway.",
+    "example_ja": "高速道路で車が故障した。",
+    "choices": ["故障する・崩壊する", "壊す", "分ける", "落ちる"]
+  },
+  {
+    "id": "come_up",
+    "verb": "come up",
+    "meaning_ja": "（話題などが）出てくる",
+    "example": "Something important came up at the last minute.",
+    "example_ja": "最後の瞬間に重要なことが出てきた。",
+    "choices": ["（話題などが）出てくる", "上がる", "近づく", "到着する"]
+  },
+  {
+    "id": "fall_behind",
+    "verb": "fall behind",
+    "meaning_ja": "遅れる",
+    "example": "Don't fall behind in your studies.",
+    "example_ja": "勉強に遅れないようにしなさい。",
+    "choices": ["遅れる", "倒れる", "後ろに下がる", "追い越す"]
+  },
+  {
+    "id": "get_away",
+    "verb": "get away",
+    "meaning_ja": "逃げる・離れる",
+    "example": "The thief got away before the police arrived.",
+    "example_ja": "警察が来る前に泥棒は逃げた。",
+    "choices": ["逃げる・離れる", "到着する", "近づく", "手に入れる"]
+  },
+  {
+    "id": "give_back",
+    "verb": "give back",
+    "meaning_ja": "返す",
+    "example": "Can you give back the book I lent you?",
+    "example_ja": "貸した本を返してくれますか？",
+    "choices": ["返す", "あげる", "もらう", "借りる"]
+  },
+  {
+    "id": "go_ahead",
+    "verb": "go ahead",
+    "meaning_ja": "先に進む・どうぞ",
+    "example": "Go ahead, I'll catch up later.",
+    "example_ja": "先に行って、後で追いつくから。",
+    "choices": ["先に進む・どうぞ", "前に行く", "戻る", "止まる"]
+  },
+  {
+    "id": "hang_up",
+    "verb": "hang up",
+    "meaning_ja": "電話を切る",
+    "example": "She hung up the phone angrily.",
+    "example_ja": "彼女は怒って電話を切った。",
+    "choices": ["電話を切る", "掛ける", "ぶら下げる", "干す"]
+  },
+  {
+    "id": "hurry_up",
+    "verb": "hurry up",
+    "meaning_ja": "急ぐ",
+    "example": "Hurry up or we'll miss the train!",
+    "example_ja": "急がないと電車に乗り遅れるよ！",
+    "choices": ["急ぐ", "走る", "遅れる", "焦る"]
+  },
+  {
+    "id": "keep_on",
+    "verb": "keep on",
+    "meaning_ja": "続ける",
+    "example": "Keep on trying, you'll get it eventually.",
+    "example_ja": "続けて、最終的にはできるようになるよ。",
+    "choices": ["続ける", "保つ", "維持する", "守る"]
+  },
+  {
+    "id": "knock_out",
+    "verb": "knock out",
+    "meaning_ja": "ノックアウトする・意識を失わせる",
+    "example": "The boxer knocked out his opponent in round two.",
+    "example_ja": "ボクサーは2ラウンドで相手をノックアウトした。",
+    "choices": ["ノックアウトする・意識を失わせる", "叩く", "壊す", "倒す"]
+  },
+  {
+    "id": "leave_out",
+    "verb": "leave out",
+    "meaning_ja": "省く・除外する",
+    "example": "Don't leave out any important details.",
+    "example_ja": "重要な詳細を省かないでください。",
+    "choices": ["省く・除外する", "出る", "残す", "忘れる"]
+  },
+  {
+    "id": "let_down",
+    "verb": "let down",
+    "meaning_ja": "がっかりさせる",
+    "example": "I don't want to let you down.",
+    "example_ja": "あなたをがっかりさせたくない。",
+    "choices": ["がっかりさせる", "下ろす", "許す", "放す"]
+  },
+  {
+    "id": "pay_back",
+    "verb": "pay back",
+    "meaning_ja": "返済する・仕返しする",
+    "example": "I'll pay you back next week.",
+    "example_ja": "来週返すよ。",
+    "choices": ["返済する・仕返しする", "支払う", "もらう", "借りる"]
+  },
+  {
+    "id": "pull_off",
+    "verb": "pull off",
+    "meaning_ja": "成し遂げる・やってのける",
+    "example": "She managed to pull off the impossible.",
+    "example_ja": "彼女は不可能なことをやってのけた。",
+    "choices": ["成し遂げる・やってのける", "引く", "脱ぐ", "外す"]
+  },
+  {
+    "id": "put_off",
+    "verb": "put off",
+    "meaning_ja": "延期する",
+    "example": "Let's put off the meeting until next week.",
+    "example_ja": "会議を来週に延期しよう。",
+    "choices": ["延期する", "消す", "置く", "外す"]
+  },
+  {
+    "id": "rule_out",
+    "verb": "rule out",
+    "meaning_ja": "除外する・可能性を排除する",
+    "example": "We can't rule out the possibility of rain.",
+    "example_ja": "雨の可能性を排除できない。",
+    "choices": ["除外する・可能性を排除する", "支配する", "決める", "線を引く"]
+  },
+  {
+    "id": "settle_down",
+    "verb": "settle down",
+    "meaning_ja": "落ち着く・定住する",
+    "example": "After traveling for years, she finally settled down.",
+    "example_ja": "何年も旅をした後、彼女はようやく定住した。",
+    "choices": ["落ち着く・定住する", "座る", "沈む", "解決する"]
+  },
+  {
+    "id": "show_off",
+    "verb": "show off",
+    "meaning_ja": "見せびらかす",
+    "example": "He's always showing off his new car.",
+    "example_ja": "彼はいつも新しい車を見せびらかしている。",
+    "choices": ["見せびらかす", "見せる", "出す", "現れる"]
+  },
+  {
+    "id": "shut_down",
+    "verb": "shut down",
+    "meaning_ja": "閉鎖する・シャットダウンする",
+    "example": "The factory was shut down last year.",
+    "example_ja": "その工場は去年閉鎖された。",
+    "choices": ["閉鎖する・シャットダウンする", "閉める", "消す", "止まる"]
+  },
+  {
+    "id": "slow_down",
+    "verb": "slow down",
+    "meaning_ja": "速度を落とす",
+    "example": "Slow down, you're driving too fast!",
+    "example_ja": "速度を落として、速すぎるよ！",
+    "choices": ["速度を落とす", "遅れる", "止まる", "減る"]
+  },
+  {
+    "id": "sort_out",
+    "verb": "sort out",
+    "meaning_ja": "整理する・解決する",
+    "example": "I need to sort out my desk.",
+    "example_ja": "机を整理しなければならない。",
+    "choices": ["整理する・解決する", "分類する", "選ぶ", "出す"]
+  },
+  {
+    "id": "speak_up",
+    "verb": "speak up",
+    "meaning_ja": "はっきり言う・声を上げる",
+    "example": "If you have an opinion, speak up!",
+    "example_ja": "意見があるなら、はっきり言いなさい！",
+    "choices": ["はっきり言う・声を上げる", "話す", "叫ぶ", "黙る"]
+  },
+  {
+    "id": "stand_for",
+    "verb": "stand for",
+    "meaning_ja": "〜を表す・〜の略である",
+    "example": "What does NASA stand for?",
+    "example_ja": "NASAは何の略ですか？",
+    "choices": ["〜を表す・〜の略である", "立つ", "我慢する", "支持する"]
+  },
+  {
+    "id": "stand_out",
+    "verb": "stand out",
+    "meaning_ja": "目立つ",
+    "example": "Her bright red dress made her stand out.",
+    "example_ja": "彼女の真っ赤なドレスは目立っていた。",
+    "choices": ["目立つ", "外に立つ", "立ち上がる", "耐える"]
+  },
+  {
+    "id": "stick_to",
+    "verb": "stick to",
+    "meaning_ja": "〜を守る・固執する",
+    "example": "Let's stick to the original plan.",
+    "example_ja": "元の計画を守ろう。",
+    "choices": ["〜を守る・固執する", "くっつく", "突き刺す", "続ける"]
+  },
+  {
+    "id": "take_on",
+    "verb": "take on",
+    "meaning_ja": "引き受ける・雇う",
+    "example": "She decided to take on more responsibility.",
+    "example_ja": "彼女はより多くの責任を引き受けることにした。",
+    "choices": ["引き受ける・雇う", "持っていく", "着る", "脱ぐ"]
+  },
+  {
+    "id": "take_up",
+    "verb": "take up",
+    "meaning_ja": "始める（趣味など）・占める",
+    "example": "I've decided to take up painting.",
+    "example_ja": "絵を描き始めることにした。",
+    "choices": ["始める（趣味など）・占める", "持ち上げる", "取る", "やめる"]
+  },
+  {
+    "id": "think_over",
+    "verb": "think over",
+    "meaning_ja": "よく考える",
+    "example": "Let me think over your proposal.",
+    "example_ja": "あなたの提案をよく考えさせてください。",
+    "choices": ["よく考える", "考える", "思い出す", "忘れる"]
+  },
+  {
+    "id": "try_on",
+    "verb": "try on",
+    "meaning_ja": "試着する",
+    "example": "Can I try on this jacket?",
+    "example_ja": "このジャケットを試着してもいいですか？",
+    "choices": ["試着する", "試す", "着る", "脱ぐ"]
+  },
+  {
+    "id": "turn_down",
+    "verb": "turn down",
+    "meaning_ja": "断る・音量を下げる",
+    "example": "She turned down the job offer.",
+    "example_ja": "彼女はその仕事のオファーを断った。",
+    "choices": ["断る・音量を下げる", "回る", "下げる", "受け入れる"]
+  },
+  {
+    "id": "turn_up",
+    "verb": "turn up",
+    "meaning_ja": "現れる・音量を上げる",
+    "example": "He turned up late to the meeting.",
+    "example_ja": "彼は会議に遅れて現れた。",
+    "choices": ["現れる・音量を上げる", "回す", "上げる", "消える"]
+  },
+  {
+    "id": "use_up",
+    "verb": "use up",
+    "meaning_ja": "使い切る",
+    "example": "We've used up all the printer paper.",
+    "example_ja": "プリンター用紙を全部使い切った。",
+    "choices": ["使い切る", "使う", "上げる", "減らす"]
+  },
+  {
+    "id": "watch_out",
+    "verb": "watch out",
+    "meaning_ja": "気をつける",
+    "example": "Watch out for cars when crossing the street.",
+    "example_ja": "道を渡る時は車に気をつけて。",
+    "choices": ["気をつける", "見る", "監視する", "見張る"]
+  },
+  {
+    "id": "wear_out",
+    "verb": "wear out",
+    "meaning_ja": "すり減る・疲れさせる",
+    "example": "These shoes are completely worn out.",
+    "example_ja": "この靴は完全にすり減っている。",
+    "choices": ["すり減る・疲れさせる", "着る", "外に出す", "身につける"]
+  },
+  {
+    "id": "wipe_out",
+    "verb": "wipe out",
+    "meaning_ja": "全滅させる・一掃する",
+    "example": "The storm wiped out the entire crop.",
+    "example_ja": "嵐が作物を全滅させた。",
+    "choices": ["全滅させる・一掃する", "拭く", "消す", "洗う"]
+  },
+  {
+    "id": "wrap_up",
+    "verb": "wrap up",
+    "meaning_ja": "終わらせる・まとめる",
+    "example": "Let's wrap up the meeting.",
+    "example_ja": "会議を終わらせましょう。",
+    "choices": ["終わらせる・まとめる", "包む", "巻く", "開ける"]
+  },
+  {
+    "id": "zoom_in",
+    "verb": "zoom in",
+    "meaning_ja": "拡大する",
+    "example": "Zoom in on the map to see the street names.",
+    "example_ja": "通り名を見るには地図を拡大してください。",
+    "choices": ["拡大する", "近づく", "縮小する", "急ぐ"]
+  },
+  {
+    "id": "opt_out",
+    "verb": "opt out",
+    "meaning_ja": "脱退する・辞退する",
+    "example": "You can opt out of the email list anytime.",
+    "example_ja": "いつでもメーリングリストから脱退できます。",
+    "choices": ["脱退する・辞退する", "選ぶ", "参加する", "申し込む"]
+  },
+  {
+    "id": "phase_out",
+    "verb": "phase out",
+    "meaning_ja": "段階的に廃止する",
+    "example": "The company is phasing out the old product line.",
+    "example_ja": "会社は旧製品ラインを段階的に廃止している。",
+    "choices": ["段階的に廃止する", "導入する", "移行する", "始める"]
+  },
+  {
+    "id": "narrow_down",
+    "verb": "narrow down",
+    "meaning_ja": "絞り込む",
+    "example": "We narrowed down the candidates to three.",
+    "example_ja": "候補者を3人に絞り込んだ。",
+    "choices": ["絞り込む", "狭くする", "減らす", "広げる"]
+  },
+  {
+    "id": "branch_out",
+    "verb": "branch out",
+    "meaning_ja": "事業を拡大する・新分野に進出する",
+    "example": "The company branched out into online sales.",
+    "example_ja": "その会社はオンライン販売に進出した。",
+    "choices": ["事業を拡大する・新分野に進出する", "枝分かれする", "広がる", "離れる"]
+  }
+]
