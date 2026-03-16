@@ -1,13 +1,23 @@
+import { useCallback } from 'react';
 import { Header } from './components/Header';
 import { QuizCard } from './components/QuizCard';
 import { StartScreen } from './components/StartScreen';
 import { DailyComplete } from './components/DailyComplete';
+import { LevelUpModal } from './components/LevelUpModal';
+import { ComboDisplay } from './components/ComboDisplay';
 import { useDailyVerbs } from './hooks/useDailyVerbs';
 import { useQuiz } from './hooks/useQuiz';
 
 function App() {
-  const { items, streak, totalXP, loading, setTotalXP } = useDailyVerbs();
+  const { items, streak, totalXP, loading, setTotalXP, totalLearned, totalVerbs, loadMoreItems } = useDailyVerbs();
   const quiz = useQuiz(items, totalXP, setTotalXP);
+
+  const handleAnotherSet = useCallback(async () => {
+    const hasMore = await loadMoreItems();
+    if (hasMore) {
+      quiz.startQuiz();
+    }
+  }, [loadMoreItems, quiz.startQuiz]);
 
   if (loading) {
     return (
@@ -29,11 +39,29 @@ function App() {
     <div className="min-h-dvh flex flex-col" style={{ background: 'var(--color-surface)' }}>
       <Header streak={streak} totalXP={totalXP} />
 
+      {/* Combo overlay */}
+      <ComboDisplay
+        combo={quiz.combo}
+        isCorrect={quiz.isCorrect}
+        answered={quiz.state === 'answered'}
+      />
+
+      {/* Level up modal */}
+      {quiz.showLevelUp && (
+        <LevelUpModal
+          levelName={quiz.showLevelUp}
+          onDismiss={quiz.dismissLevelUp}
+        />
+      )}
+
       <main className="flex-1 px-5 pb-12 max-w-lg mx-auto w-full">
         {quiz.state === 'ready' && (
           <StartScreen
             newCount={newCount}
             reviewCount={reviewCount}
+            streak={streak}
+            totalLearned={totalLearned}
+            totalVerbs={totalVerbs}
             onStart={quiz.startQuiz}
           />
         )}
@@ -46,6 +74,7 @@ function App() {
             selectedChoice={quiz.selectedChoice}
             isCorrect={quiz.isCorrect}
             xpGained={quiz.xpGained}
+            combo={quiz.combo}
             state={quiz.state as 'question' | 'answered'}
             onAnswer={quiz.answer}
             onNext={quiz.next}
@@ -58,6 +87,8 @@ function App() {
             sessionXP={quiz.sessionXP}
             streak={streak}
             totalXP={totalXP}
+            maxCombo={quiz.maxCombo}
+            onAnotherSet={handleAnotherSet}
           />
         )}
       </main>

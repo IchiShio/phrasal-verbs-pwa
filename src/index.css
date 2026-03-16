@@ -143,3 +143,74 @@ body::before {
 .choice-btn:active {
   transform: scale(0.98);
 }
+
+/* Combo burst */
+@keyframes combo-burst {
+  0% { transform: scale(0.3) rotate(-8deg); opacity: 0; }
+  50% { transform: scale(1.15) rotate(2deg); opacity: 1; }
+  100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+
+@keyframes combo-exit {
+  0% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(0.8) translateY(-30px); opacity: 0; }
+}
+
+.animate-combo-in {
+  animation: combo-burst 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-combo-out {
+  animation: combo-exit 0.3s ease-in forwards;
+}
+
+/* Level up modal */
+@keyframes level-enter {
+  0% { opacity: 0; transform: scale(0.5) rotate(-5deg); }
+  60% { transform: scale(1.05) rotate(1deg); }
+  100% { opacity: 1; transform: scale(1) rotate(0deg); }
+}
+
+@keyframes level-bg {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.animate-level-enter {
+  animation: level-enter 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-level-bg {
+  animation: level-bg 0.3s ease-out forwards;
+}
+
+/* Streak milestone pulse */
+@keyframes milestone-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255, 159, 67, 0); }
+  50% { box-shadow: 0 0 30px 8px rgba(255, 159, 67, 0.3); }
+}
+
+.animate-milestone {
+  animation: milestone-glow 1.5s ease-in-out 3;
+}
+
+/* Mastery progress ring */
+@keyframes ring-fill {
+  0% { stroke-dashoffset: 283; }
+}
+
+.animate-ring {
+  animation: ring-fill 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Perfect session */
+@keyframes sparkle {
+  0%, 100% { opacity: 0.3; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+.animate-sparkle {
+  animation: sparkle 1.5s ease-in-out infinite;
+}
+.animate-sparkle-delay { animation-delay: 0.5s; }
+.animate-sparkle-delay-2 { animation-delay: 1s; }

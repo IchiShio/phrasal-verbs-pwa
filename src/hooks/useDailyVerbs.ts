@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { seedVerbs } from '../db';
+import { useState, useEffect, useCallback } from 'react';
+import { seedVerbs, db } from '../db';
 import { getDailyItems } from '../lib/daily';
 import { updateStreak } from '../lib/streak';
 import { getStat } from '../db';
@@ -10,6 +10,8 @@ export function useDailyVerbs() {
   const [streak, setStreak] = useState(0);
   const [totalXP, setTotalXP] = useState(0);
   const [loading, setLoading] = useState(true);
+  const [totalLearned, setTotalLearned] = useState(0);
+  const [totalVerbs, setTotalVerbs] = useState(0);
 
   useEffect(() => {
     (async () => {
@@ -20,9 +22,24 @@ export function useDailyVerbs() {
       setTotalXP(xp);
       const dailyItems = await getDailyItems(6);
       setItems(dailyItems);
+
+      const learned = await db.progress.count();
+      const total = await db.verbs.count();
+      setTotalLearned(learned);
+      setTotalVerbs(total);
+
       setLoading(false);
     })();
   }, []);
 
-  return { items, streak, totalXP, loading, setTotalXP, setStreak };
+  const loadMoreItems = useCallback(async () => {
+    const moreItems = await getDailyItems(6);
+    if (moreItems.length > 0) {
+      setItems(moreItems);
+      return true;
+    }
+    return false;
+  }, []);
+
+  return { items, streak, totalXP, loading, setTotalXP, setStreak, totalLearned, totalVerbs, loadMoreItems };
 }

@@ -2,6 +2,8 @@ import { useState, useCallback } from 'react';
 import { db } from '../db';
 import { setStat } from '../db';
 import { updateSRS, createInitialProgress } from '../lib/srs';
+import { getLevelInfo } from '../lib/types';
+import { playCorrect, playWrong, playCombo, playLevelUp, vibrate } from '../lib/sound';
 import type { QuizItem, QuizState } from '../lib/types';
 
 interface QuizResult {
@@ -18,6 +20,9 @@ export function useQuiz(items: QuizItem[], totalXP: number, setTotalXP: (xp: num
   const [xpGained, setXpGained] = useState(0);
   const [results, setResults] = useState<QuizResult[]>([]);
   const [sessionXP, setSessionXP] = useState(0);
+  const [combo, setCombo] = useState(0);
+  const [maxCombo, setMaxCombo] = useState(0);
+  const [showLevelUp, setShowLevelUp] = useState<string | null>(null);
 
   const currentItem = items[currentIndex] || null;
 
@@ -36,6 +41,9 @@ export function useQuiz(items: QuizItem[], totalXP: number, setTotalXP: (xp: num
     setCurrentIndex(0);
     setResults([]);
     setSessionXP(0);
+    setCombo(0);
+    setMaxCombo(0);
+    setShowLevelUp(null);
   }, []);
 
   const answer = useCallback(async (choiceIndex: number, choices: string[]) => {
@@ -47,14 +55,49 @@ export function useQuiz(items: QuizItem[], totalXP: number, setTotalXP: (xp: num
     setIsCorrect(correct);
     setState('answered');
 
-    const xp = correct ? (currentItem.isReview ? 5 : 10) : 0;
+    const newCombo = correct ? combo + 1 : 0;
+    setCombo(newCombo);
+    if (newCombo > maxCombo) setMaxCombo(newCombo);
+
+    // XP with combo multiplier
+    let xp = 0;
+    if (correct) {
+      const baseXP = currentItem.isReview ? 5 : 10;
+      const comboMultiplier = Math.min(newCombo, 5); // cap at x5
+      xp = baseXP + (comboMultiplier > 1 ? baseXP * (comboMultiplier - 1) * 0.5 : 0);
+      xp = Math.round(xp);
+    }
     setXpGained(xp);
 
+    if (correct) {
+      if (newCombo >= 3) {
+        playCombo();
+        vibrate([30, 30, 30]);
+      } else {
+        playCorrect();
+        vibrate(15);
+      }
+    } else {
+      playWrong();
+      vibrate([50, 20, 50]);
+    }
+
     if (xp > 0) {
+      const prevLevel = getLevelInfo(totalXP);
       const newTotal = totalXP + xp;
       setTotalXP(newTotal);
       setSessionXP(prev => prev + xp);
       await setStat('totalXP', newTotal);
+
+      // Level up check
+      const newLevel = getLevelInfo(newTotal);
+      if (newLevel.levelIndex > prevLevel.levelIndex) {
+        setTimeout(() => {
+          playLevelUp();
+          vibrate([50, 50, 50, 50, 100]);
+          setShowLevelUp(newLevel.level.name);
+        }, 600);
+      }
     }
 
     const quality = correct ? 5 : 1;
@@ -70,9 +113,10 @@ export function useQuiz(items: QuizItem[], totalXP: number, setTotalXP: (xp: num
       meaning_ja: currentItem.verb.meaning_ja,
       correct,
     }]);
-  }, [state, currentItem, totalXP, setTotalXP]);
+  }, [state, currentItem, totalXP, setTotalXP, combo, maxCombo]);
 
   const next = useCallback(() => {
+    setShowLevelUp(null);
     if (currentIndex + 1 >= items.length) {
       setState('complete');
     } else {
@@ -84,6 +128,10 @@ export function useQuiz(items: QuizItem[], totalXP: number, setTotalXP: (xp: num
     }
   }, [currentIndex, items.length]);
 
+  const dismissLevelUp = useCallback(() => {
+    setShowLevelUp(null);
+  }, []);
+
   return {
     state,
     currentItem,
@@ -93,10 +141,14 @@ export function useQuiz(items: QuizItem[], totalXP: number, setTotalXP: (xp: num
     xpGained,
     results,
     sessionXP,
+    combo,
+    maxCombo,
+    showLevelUp,
     shuffledChoices,
     startQuiz,
     answer,
     next,
+    dismissLevelUp,
     total: items.length,
   };
 }

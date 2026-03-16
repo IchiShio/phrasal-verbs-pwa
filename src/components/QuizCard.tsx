@@ -9,15 +9,17 @@ interface QuizCardProps {
   selectedChoice: number | null;
   isCorrect: boolean;
   xpGained: number;
+  combo: number;
   state: 'question' | 'answered';
   onAnswer: (choiceIndex: number, choices: string[]) => void;
   onNext: () => void;
 }
 
 const CHOICE_LABELS = ['A', 'B', 'C', 'D'];
+const CHOICE_KEYS = ['1', '2', '3', '4'];
 
 export function QuizCard({
-  item, index, total, selectedChoice, isCorrect, xpGained,
+  item, index, total, selectedChoice, isCorrect, xpGained, combo,
   state, onAnswer, onNext,
 }: QuizCardProps) {
   const [showXP, setShowXP] = useState(false);
@@ -31,11 +33,30 @@ export function QuizCard({
     return arr;
   }, [item.verb.id]);
 
+  // Keyboard shortcuts
+  useEffect(() => {
+    const handler = (e: KeyboardEvent) => {
+      if (state === 'question') {
+        const idx = CHOICE_KEYS.indexOf(e.key);
+        if (idx !== -1 && idx < choices.length) {
+          onAnswer(idx, choices);
+        }
+      } else if (state === 'answered') {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          onNext();
+        }
+      }
+    };
+    window.addEventListener('keydown', handler);
+    return () => window.removeEventListener('keydown', handler);
+  }, [state, choices, onAnswer, onNext]);
+
   useEffect(() => {
     if (state === 'answered' && isCorrect) {
       confetti({
-        particleCount: 60,
-        spread: 70,
+        particleCount: 40 + combo * 15,
+        spread: 50 + combo * 10,
         origin: { y: 0.65 },
         colors: ['#e8ff47', '#47ffb2', '#ff9f43'],
       });
@@ -43,7 +64,7 @@ export function QuizCard({
       const t = setTimeout(() => setShowXP(false), 1000);
       return () => clearTimeout(t);
     }
-  }, [state, isCorrect]);
+  }, [state, isCorrect, combo]);
 
   const correctIdx = choices.indexOf(item.verb.choices[0]);
 
@@ -67,21 +88,31 @@ export function QuizCard({
         >
           {String(index + 1).padStart(2, '0')}/{String(total).padStart(2, '0')}
         </span>
-        {item.isReview && (
-          <span
-            className="text-xs uppercase tracking-[0.15em] px-2 py-0.5"
-            style={{
-              fontFamily: 'var(--font-mono)',
-              color: 'var(--color-streak)',
-              border: '1px solid var(--color-streak)',
-            }}
-          >
-            Review
-          </span>
-        )}
+        <div className="flex items-center gap-3">
+          {combo >= 2 && state === 'question' && (
+            <span
+              className="text-xs tracking-wider"
+              style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-accent)' }}
+            >
+              x{combo} combo
+            </span>
+          )}
+          {item.isReview && (
+            <span
+              className="text-xs uppercase tracking-[0.15em] px-2 py-0.5"
+              style={{
+                fontFamily: 'var(--font-mono)',
+                color: 'var(--color-streak)',
+                border: '1px solid var(--color-streak)',
+              }}
+            >
+              Review
+            </span>
+          )}
+        </div>
       </div>
 
-      {/* Progress bar — thin editorial line */}
+      {/* Progress bar */}
       <div className="h-px mb-8" style={{ background: 'var(--color-surface-border)' }}>
         <div
           className="h-px transition-all duration-500 ease-out"
@@ -116,10 +147,13 @@ export function QuizCard({
         )}
         {showXP && xpGained > 0 && (
           <div
-            className="absolute top-0 right-0 text-lg font-bold animate-xp-float"
-            style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-correct)' }}
+            className="absolute top-0 right-0 animate-xp-float"
+            style={{ fontFamily: 'var(--font-mono)' }}
           >
-            +{xpGained}
+            <span className="text-lg font-bold" style={{ color: 'var(--color-correct)' }}>+{xpGained}</span>
+            {combo > 1 && (
+              <span className="text-xs ml-1" style={{ color: 'var(--color-accent)' }}>x{combo}</span>
+            )}
           </div>
         )}
       </div>
@@ -156,16 +190,14 @@ export function QuizCard({
               className={`choice-btn ${extra} w-full flex items-center gap-4 border p-4 text-left transition-all ${
                 state === 'answered' ? 'cursor-default' : 'cursor-pointer'
               }`}
-              style={{
-                borderColor,
-                background: bg,
-              }}
+              style={{ borderColor, background: bg }}
             >
               <span
-                className="text-xs w-6 text-center flex-shrink-0 uppercase"
+                className="text-xs w-6 text-center flex-shrink-0"
                 style={{ fontFamily: 'var(--font-mono)', color: labelColor }}
               >
-                {CHOICE_LABELS[i]}
+                <span className="uppercase">{CHOICE_LABELS[i]}</span>
+                <span className="ml-0.5 opacity-40" style={{ fontSize: '0.6rem' }}>{CHOICE_KEYS[i]}</span>
               </span>
               <span className="text-base">{choice}</span>
             </button>
@@ -195,7 +227,7 @@ export function QuizCard({
               fontSize: '0.875rem',
             }}
           >
-            Next
+            Next <span className="opacity-40 text-xs ml-1">Enter</span>
           </button>
         </div>
       )}
