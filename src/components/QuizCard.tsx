@@ -14,6 +14,8 @@ interface QuizCardProps {
   onNext: () => void;
 }
 
+const CHOICE_LABELS = ['A', 'B', 'C', 'D'];
+
 export function QuizCard({
   item, index, total, selectedChoice, isCorrect, xpGained,
   state, onAnswer, onNext,
@@ -32,13 +34,13 @@ export function QuizCard({
   useEffect(() => {
     if (state === 'answered' && isCorrect) {
       confetti({
-        particleCount: 80,
-        spread: 60,
-        origin: { y: 0.7 },
-        colors: ['#6366f1', '#22c55e', '#f59e0b'],
+        particleCount: 60,
+        spread: 70,
+        origin: { y: 0.65 },
+        colors: ['#e8ff47', '#47ffb2', '#ff9f43'],
       });
       setShowXP(true);
-      const t = setTimeout(() => setShowXP(false), 800);
+      const t = setTimeout(() => setShowXP(false), 1000);
       return () => clearTimeout(t);
     }
   }, [state, isCorrect]);
@@ -50,55 +52,98 @@ export function QuizCard({
     const parts = example.split(regex);
     return parts.map((part, i) =>
       regex.test(part)
-        ? <span key={i} className="text-indigo-400 font-bold">{part}</span>
+        ? <span key={i} className="accent-line" style={{ color: 'var(--color-accent)' }}>{part}</span>
         : <span key={i}>{part}</span>
     );
   };
 
   return (
-    <div className="animate-pop-in">
-      <div className="text-center mb-2 text-sm text-slate-400">
-        {index + 1} / {total}
-        {item.isReview && <span className="ml-2 text-amber-400 text-xs">復習</span>}
+    <div className="animate-fade-scale">
+      {/* Progress */}
+      <div className="flex items-center justify-between mb-3">
+        <span
+          className="text-xs uppercase tracking-[0.2em]"
+          style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-text-dim)' }}
+        >
+          {String(index + 1).padStart(2, '0')}/{String(total).padStart(2, '0')}
+        </span>
+        {item.isReview && (
+          <span
+            className="text-xs uppercase tracking-[0.15em] px-2 py-0.5"
+            style={{
+              fontFamily: 'var(--font-mono)',
+              color: 'var(--color-streak)',
+              border: '1px solid var(--color-streak)',
+            }}
+          >
+            Review
+          </span>
+        )}
       </div>
 
-      <div className="h-1.5 bg-slate-700 rounded-full mb-6 overflow-hidden">
+      {/* Progress bar — thin editorial line */}
+      <div className="h-px mb-8" style={{ background: 'var(--color-surface-border)' }}>
         <div
-          className="h-full bg-indigo-500 rounded-full transition-all duration-300"
-          style={{ width: `${((index + 1) / total) * 100}%` }}
+          className="h-px transition-all duration-500 ease-out"
+          style={{
+            width: `${((index + 1) / total) * 100}%`,
+            background: 'var(--color-accent)',
+          }}
         />
       </div>
 
-      <div className="bg-slate-800 rounded-2xl p-6 mb-6 relative">
-        <h2 className="text-2xl font-bold mb-3">{item.verb.verb}</h2>
-        <p className="text-slate-300 text-lg leading-relaxed">
+      {/* Verb card */}
+      <div className="relative mb-8">
+        <h2
+          className="text-4xl italic mb-4"
+          style={{ fontFamily: 'var(--font-display)' }}
+        >
+          {item.verb.verb}
+        </h2>
+        <p
+          className="text-lg leading-relaxed"
+          style={{ color: 'var(--color-text-muted)' }}
+        >
           {highlighted(item.verb.verb, item.verb.example)}
         </p>
         {state === 'answered' && (
-          <p className="text-slate-400 text-sm mt-2">{item.verb.example_ja}</p>
+          <p
+            className="mt-3 text-sm animate-reveal"
+            style={{ color: 'var(--color-text-dim)', fontFamily: 'var(--font-body)' }}
+          >
+            {item.verb.example_ja}
+          </p>
         )}
         {showXP && xpGained > 0 && (
-          <div className="absolute top-4 right-4 text-green-400 font-bold text-lg animate-xp-float">
-            +{xpGained} XP
+          <div
+            className="absolute top-0 right-0 text-lg font-bold animate-xp-float"
+            style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-correct)' }}
+          >
+            +{xpGained}
           </div>
         )}
       </div>
 
-      <p className="text-center text-slate-400 text-sm mb-4">意味を選んでください</p>
+      {/* Divider */}
+      <div className="h-px mb-6" style={{ background: 'var(--color-surface-border)' }} />
 
-      <div className="grid grid-cols-1 gap-3 mb-6">
+      {/* Choices */}
+      <div className="space-y-3 mb-8">
         {choices.map((choice, i) => {
-          let bg = 'bg-slate-800 hover:bg-slate-700 active:bg-slate-600';
-          let border = 'border-slate-700';
+          let borderColor = 'var(--color-surface-border)';
+          let bg = 'var(--color-surface-raised)';
+          let labelColor = 'var(--color-text-dim)';
           let extra = '';
 
           if (state === 'answered') {
             if (i === correctIdx) {
-              bg = 'bg-green-900/50';
-              border = 'border-green-500';
+              borderColor = 'var(--color-correct)';
+              bg = 'var(--color-correct-bg)';
+              labelColor = 'var(--color-correct)';
             } else if (i === selectedChoice && !isCorrect) {
-              bg = 'bg-red-900/50';
-              border = 'border-red-500';
+              borderColor = 'var(--color-wrong)';
+              bg = 'var(--color-wrong-bg)';
+              labelColor = 'var(--color-wrong)';
               extra = 'animate-shake';
             }
           }
@@ -108,26 +153,49 @@ export function QuizCard({
               key={i}
               onClick={() => state === 'question' && onAnswer(i, choices)}
               disabled={state === 'answered'}
-              className={`${bg} ${extra} border ${border} rounded-xl p-4 text-left text-lg transition-all ${
+              className={`choice-btn ${extra} w-full flex items-center gap-4 border p-4 text-left transition-all ${
                 state === 'answered' ? 'cursor-default' : 'cursor-pointer'
               }`}
+              style={{
+                borderColor,
+                background: bg,
+              }}
             >
-              {choice}
+              <span
+                className="text-xs w-6 text-center flex-shrink-0 uppercase"
+                style={{ fontFamily: 'var(--font-mono)', color: labelColor }}
+              >
+                {CHOICE_LABELS[i]}
+              </span>
+              <span className="text-base">{choice}</span>
             </button>
           );
         })}
       </div>
 
+      {/* Feedback + Next */}
       {state === 'answered' && (
-        <div className="animate-slide-up">
-          <div className={`text-center mb-4 text-lg font-bold ${isCorrect ? 'text-green-400' : 'text-red-400'}`}>
-            {isCorrect ? '正解！' : `不正解... 正解は「${item.verb.choices[0]}」`}
+        <div className="animate-reveal">
+          <div
+            className="text-center mb-6 text-sm uppercase tracking-[0.15em]"
+            style={{
+              fontFamily: 'var(--font-mono)',
+              color: isCorrect ? 'var(--color-correct)' : 'var(--color-wrong)',
+            }}
+          >
+            {isCorrect ? 'Correct' : `Incorrect — ${item.verb.choices[0]}`}
           </div>
           <button
             onClick={onNext}
-            className="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-4 rounded-xl text-lg transition-colors cursor-pointer"
+            className="w-full py-4 text-center tracking-wider uppercase transition-all cursor-pointer border-0 hover:tracking-[0.25em] active:scale-[0.98]"
+            style={{
+              fontFamily: 'var(--font-mono)',
+              background: 'var(--color-accent)',
+              color: 'var(--color-surface)',
+              fontSize: '0.875rem',
+            }}
           >
-            次へ
+            Next
           </button>
         </div>
       )}

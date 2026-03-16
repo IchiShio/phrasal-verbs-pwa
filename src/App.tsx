@@ -11,8 +11,13 @@ function App() {
 
   if (loading) {
     return (
-      <div className="min-h-dvh flex items-center justify-center">
-        <div className="text-slate-400 animate-pulse text-lg">読み込み中...</div>
+      <div className="min-h-dvh flex items-center justify-center" style={{ background: 'var(--color-surface)' }}>
+        <div
+          className="text-sm uppercase tracking-[0.3em] animate-pulse"
+          style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-text-dim)' }}
+        >
+          Loading
+        </div>
       </div>
     );
   }
@@ -21,10 +26,10 @@ function App() {
   const reviewCount = items.filter(i => i.isReview).length;
 
   return (
-    <div className="min-h-dvh flex flex-col">
+    <div className="min-h-dvh flex flex-col" style={{ background: 'var(--color-surface)' }}>
       <Header streak={streak} totalXP={totalXP} />
 
-      <main className="flex-1 px-4 py-6 max-w-lg mx-auto w-full">
+      <main className="flex-1 px-5 pb-12 max-w-lg mx-auto w-full">
         {quiz.state === 'ready' && (
           <StartScreen
             newCount={newCount}

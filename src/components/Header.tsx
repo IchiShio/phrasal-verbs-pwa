@@ -9,28 +9,58 @@ export function Header({ streak, totalXP }: HeaderProps) {
   const { level, nextLevel, progress, levelIndex } = getLevelInfo(totalXP);
 
   return (
-    <header className="sticky top-0 z-50 bg-slate-900/95 backdrop-blur border-b border-slate-700/50 px-4 py-3">
-      <div className="max-w-lg mx-auto flex items-center justify-between">
-        <div className="flex items-center gap-1.5 text-amber-400 font-bold text-lg">
-          <span className="text-xl">🔥</span>
-          <span>{streak}</span>
+    <header className="sticky top-0 z-50 bg-[var(--color-surface)]/95 backdrop-blur-md border-b border-[var(--color-surface-border)]">
+      <div className="max-w-lg mx-auto flex items-center justify-between px-5 py-3">
+        {/* Streak */}
+        <div className="flex items-center gap-2">
+          <span
+            className="text-lg inline-block"
+            style={{ animation: streak > 1 ? 'streak-flame 1.5s ease-in-out infinite' : 'none' }}
+          >
+            🔥
+          </span>
+          <span
+            className="font-mono text-lg tracking-tight"
+            style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-streak)' }}
+          >
+            {streak}
+          </span>
         </div>
 
-        <div className="flex-1 mx-4">
-          <div className="text-center text-xs text-slate-400 mb-1">
-            Lv.{levelIndex + 1} {level.name}
-            {nextLevel && <span className="text-slate-500"> → {nextLevel.name}</span>}
+        {/* Level */}
+        <div className="flex-1 mx-5">
+          <div className="flex items-center justify-between mb-1.5">
+            <span
+              className="text-xs uppercase tracking-[0.15em]"
+              style={{ color: 'var(--color-text-muted)', fontFamily: 'var(--font-mono)' }}
+            >
+              Lv.{levelIndex + 1}
+            </span>
+            <span
+              className="text-xs italic"
+              style={{ fontFamily: 'var(--font-display)', color: 'var(--color-text-muted)' }}
+            >
+              {level.name}
+              {nextLevel && <span style={{ color: 'var(--color-text-dim)' }}> → {nextLevel.name}</span>}
+            </span>
           </div>
-          <div className="h-2 bg-slate-700 rounded-full overflow-hidden">
+          <div className="h-[3px] bg-[var(--color-surface-border)] overflow-hidden">
             <div
-              className="h-full bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full transition-all duration-500"
-              style={{ width: `${progress * 100}%` }}
+              className="h-full transition-all duration-700 ease-out"
+              style={{
+                width: `${progress * 100}%`,
+                background: 'var(--color-accent)',
+              }}
             />
           </div>
         </div>
 
-        <div className="text-sm font-bold text-indigo-400">
-          {totalXP} XP
+        {/* XP */}
+        <div
+          className="text-xs tracking-wider"
+          style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-accent-dim)' }}
+        >
+          {totalXP}<span style={{ color: 'var(--color-text-dim)' }}>xp</span>
         </div>
       </div>
     </header>

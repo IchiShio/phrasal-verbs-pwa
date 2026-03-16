@@ -16,11 +16,11 @@ export function DailyComplete({ results, sessionXP, streak, totalXP }: DailyComp
   const accuracy = results.length > 0 ? Math.round((correctCount / results.length) * 100) : 0;
 
   const shareText = [
-    `Phrasal Verbs Daily 🔥${streak}日連続`,
-    `${correctCount}/${results.length} 正解（${accuracy}%）`,
-    `+${sessionXP} XP（累計 ${totalXP} XP）`,
+    `Phrasal Verbs Daily — Day ${streak}`,
+    `${correctCount}/${results.length} correct (${accuracy}%)`,
+    `+${sessionXP} XP (total: ${totalXP})`,
     '',
-    results.map(r => `${r.correct ? '✅' : '❌'} ${r.verb}`).join('\n'),
+    results.map(r => `${r.correct ? '○' : '×'} ${r.verb}`).join('\n'),
   ].join('\n');
 
   const copyShare = async () => {
@@ -30,46 +30,127 @@ export function DailyComplete({ results, sessionXP, streak, totalXP }: DailyComp
   };
 
   return (
-    <div className="animate-slide-up text-center">
-      <div className="text-6xl mb-4">🎉</div>
-      <h2 className="text-2xl font-bold mb-2">今日の学習完了！</h2>
+    <div className="pt-8">
+      {/* Editorial completion heading */}
+      <div className="opacity-0 animate-reveal mb-10">
+        <p
+          className="text-xs uppercase tracking-[0.25em] mb-3"
+          style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-text-dim)' }}
+        >
+          Session Complete
+        </p>
+        <h1
+          className="text-5xl italic leading-[1.1]"
+          style={{ fontFamily: 'var(--font-display)' }}
+        >
+          Well{' '}
+          <span style={{ color: 'var(--color-accent)' }}>done.</span>
+        </h1>
+        <div className="w-12 h-[3px] mt-4" style={{ background: 'var(--color-accent)' }} />
+      </div>
 
-      <div className="grid grid-cols-3 gap-4 my-6">
-        <div className="bg-slate-800 rounded-xl p-4">
-          <div className="text-2xl font-bold text-green-400">{correctCount}/{results.length}</div>
-          <div className="text-xs text-slate-400">正解数</div>
+      {/* Stats grid */}
+      <div className="grid grid-cols-3 gap-px mb-8 opacity-0 animate-reveal stagger-2" style={{ background: 'var(--color-surface-border)' }}>
+        <div className="p-4 text-center" style={{ background: 'var(--color-surface-raised)' }}>
+          <div
+            className="text-2xl mb-1"
+            style={{ fontFamily: 'var(--font-display)', color: 'var(--color-correct)' }}
+          >
+            {correctCount}/{results.length}
+          </div>
+          <div
+            className="text-[10px] uppercase tracking-[0.2em]"
+            style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-text-dim)' }}
+          >
+            Correct
+          </div>
         </div>
-        <div className="bg-slate-800 rounded-xl p-4">
-          <div className="text-2xl font-bold text-indigo-400">+{sessionXP}</div>
-          <div className="text-xs text-slate-400">XP</div>
+        <div className="p-4 text-center" style={{ background: 'var(--color-surface-raised)' }}>
+          <div
+            className="text-2xl mb-1"
+            style={{ fontFamily: 'var(--font-display)', color: 'var(--color-accent)' }}
+          >
+            +{sessionXP}
+          </div>
+          <div
+            className="text-[10px] uppercase tracking-[0.2em]"
+            style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-text-dim)' }}
+          >
+            XP
+          </div>
         </div>
-        <div className="bg-slate-800 rounded-xl p-4">
-          <div className="text-2xl font-bold text-amber-400">🔥{streak}</div>
-          <div className="text-xs text-slate-400">連続日数</div>
+        <div className="p-4 text-center" style={{ background: 'var(--color-surface-raised)' }}>
+          <div
+            className="text-2xl mb-1"
+            style={{ fontFamily: 'var(--font-display)', color: 'var(--color-streak)' }}
+          >
+            {streak}
+          </div>
+          <div
+            className="text-[10px] uppercase tracking-[0.2em]"
+            style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-text-dim)' }}
+          >
+            Streak
+          </div>
         </div>
       </div>
 
-      <div className="bg-slate-800 rounded-xl p-4 mb-6 text-left">
-        <h3 className="text-sm font-bold text-slate-400 mb-3">今日学んだ句動詞</h3>
-        <div className="space-y-2">
+      {/* Verb results list */}
+      <div className="opacity-0 animate-reveal stagger-3 mb-8">
+        <div
+          className="text-xs uppercase tracking-[0.2em] mb-4"
+          style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-text-dim)' }}
+        >
+          Today's Verbs
+        </div>
+        <div className="border" style={{ borderColor: 'var(--color-surface-border)' }}>
           {results.map((r, i) => (
-            <div key={i} className="flex items-center gap-2 text-sm">
-              <span>{r.correct ? '✅' : '❌'}</span>
-              <span className="font-bold">{r.verb}</span>
-              <span className="text-slate-400">- {r.meaning_ja}</span>
+            <div
+              key={i}
+              className="flex items-center gap-3 px-4 py-3 border-b last:border-b-0"
+              style={{ borderColor: 'var(--color-surface-border)' }}
+            >
+              <span
+                className="w-4 text-center text-xs"
+                style={{
+                  fontFamily: 'var(--font-mono)',
+                  color: r.correct ? 'var(--color-correct)' : 'var(--color-wrong)',
+                }}
+              >
+                {r.correct ? '○' : '×'}
+              </span>
+              <span className="font-medium text-sm" style={{ fontFamily: 'var(--font-body)' }}>
+                {r.verb}
+              </span>
+              <span className="text-xs ml-auto" style={{ color: 'var(--color-text-dim)' }}>
+                {r.meaning_ja}
+              </span>
             </div>
           ))}
         </div>
       </div>
 
-      <button
-        onClick={copyShare}
-        className="w-full bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white font-bold py-3 rounded-xl transition-colors cursor-pointer mb-3"
-      >
-        📋 結果をコピー
-      </button>
-
-      <p className="text-slate-500 text-sm">明日も来てね！</p>
+      {/* Copy button */}
+      <div className="opacity-0 animate-reveal stagger-4">
+        <button
+          onClick={copyShare}
+          className="w-full py-3 text-center text-xs uppercase tracking-[0.2em] transition-all cursor-pointer border hover:bg-[var(--color-surface-hover)] active:scale-[0.98]"
+          style={{
+            fontFamily: 'var(--font-mono)',
+            borderColor: 'var(--color-surface-border)',
+            background: 'var(--color-surface-raised)',
+            color: 'var(--color-text-muted)',
+          }}
+        >
+          Copy Results
+        </button>
+        <p
+          className="text-center mt-5 text-sm italic"
+          style={{ fontFamily: 'var(--font-display)', color: 'var(--color-text-dim)' }}
+        >
+          See you tomorrow.
+        </p>
+      </div>
     </div>
   );
 }
