@@ -1,0 +1,104 @@
+[
+  {
+    "id": "up",
+    "core_meaning": "upward movement",
+    "core_meaning_ja": "上方向への動き",
+    "senses": [
+      { "id": "completion", "label": "完了・消耗", "label_en": "Completion", "description": "Something is finished or used entirely", "visual": "fill-up" },
+      { "id": "increase", "label": "増加・上昇", "label_en": "Increase", "description": "Getting more, higher, louder", "visual": "arrow-rise" },
+      { "id": "improvement", "label": "改善・回復", "label_en": "Improvement", "description": "Getting better or more cheerful", "visual": "level-up" },
+      { "id": "appearance", "label": "出現・到達", "label_en": "Appearance", "description": "Coming into view or existence", "visual": "emerge" }
+    ]
+  },
+  {
+    "id": "out",
+    "core_meaning": "outward movement",
+    "core_meaning_ja": "外側への動き",
+    "senses": [
+      { "id": "discovery", "label": "発見・判明", "label_en": "Discovery", "description": "Finding or revealing something hidden", "visual": "expand-out" },
+      { "id": "visibility", "label": "目立つ・可視化", "label_en": "Visibility", "description": "Becoming visible or prominent", "visual": "expand-out" },
+      { "id": "distribution", "label": "配布・拡散", "label_en": "Distribution", "description": "Spreading or giving to many", "visual": "scatter" },
+      { "id": "exclusion", "label": "除外・排除", "label_en": "Exclusion", "description": "Removing or leaving something out", "visual": "push-out" },
+      { "id": "extinction", "label": "消滅・完了", "label_en": "Extinction", "description": "Something ending or burning through", "visual": "fade-out" }
+    ]
+  },
+  {
+    "id": "off",
+    "core_meaning": "separation / disconnection",
+    "core_meaning_ja": "分離・切断",
+    "senses": [
+      { "id": "separation", "label": "分離・切断", "label_en": "Separation", "description": "Breaking away or disconnecting", "visual": "cut-off" },
+      { "id": "departure", "label": "出発・開始", "label_en": "Departure", "description": "Setting out or beginning", "visual": "depart" },
+      { "id": "completion", "label": "完了・中止", "label_en": "Completion", "description": "Finishing or cancelling", "visual": "cut-off" },
+      { "id": "reduction", "label": "減少・低下", "label_en": "Reduction", "description": "Decreasing or declining", "visual": "descend" }
+    ]
+  },
+  {
+    "id": "down",
+    "core_meaning": "downward movement",
+    "core_meaning_ja": "下方向への動き",
+    "senses": [
+      { "id": "decrease", "label": "減少・鎮静", "label_en": "Decrease", "description": "Getting less, quieter, calmer", "visual": "descend" },
+      { "id": "settling", "label": "定着・安定", "label_en": "Settling", "description": "Becoming stable or established", "visual": "settle" },
+      { "id": "recording", "label": "記録・書き留め", "label_en": "Recording", "description": "Writing or noting something", "visual": "descend" },
+      { "id": "failure", "label": "故障・崩壊", "label_en": "Failure", "description": "Breaking or collapsing", "visual": "collapse" }
+    ]
+  },
+  {
+    "id": "on",
+    "core_meaning": "continuation / contact",
+    "core_meaning_ja": "継続・接触",
+    "senses": [
+      { "id": "continuation", "label": "継続", "label_en": "Continuation", "description": "Keeping going without stopping", "visual": "flow" },
+      { "id": "activation", "label": "起動・装着", "label_en": "Activation", "description": "Turning on or putting on", "visual": "activate" },
+      { "id": "dependence", "label": "依存・基づく", "label_en": "Dependence", "description": "Relying on or based upon", "visual": "connect" }
+    ]
+  },
+  {
+    "id": "away",
+    "core_meaning": "movement from here",
+    "core_meaning_ja": "ここから離れる動き",
+    "senses": [
+      { "id": "distance", "label": "遠ざかる", "label_en": "Distance", "description": "Moving further from a point", "visual": "push-away" },
+      { "id": "disappearance", "label": "消失・処分", "label_en": "Disappearance", "description": "Something ceasing to exist", "visual": "fade-out" }
+    ]
+  },
+  {
+    "id": "into",
+    "core_meaning": "inward movement",
+    "core_meaning_ja": "内部への動き",
+    "senses": [
+      { "id": "entry", "label": "突入・遭遇", "label_en": "Entry", "description": "Moving or crashing into something", "visual": "enter" },
+      { "id": "transformation", "label": "変化・変換", "label_en": "Transformation", "description": "Changing from one state to another", "visual": "morph" },
+      { "id": "investigation", "label": "調査・深入り", "label_en": "Investigation", "description": "Going deeper into a subject", "visual": "enter" }
+    ]
+  },
+  {
+    "id": "through",
+    "core_meaning": "passage from start to end",
+    "core_meaning_ja": "始めから終わりまで通り抜ける",
+    "senses": [
+      { "id": "completion", "label": "達成・完遂", "label_en": "Completion", "description": "Getting to the other side of something", "visual": "pass-through" },
+      { "id": "experience", "label": "経験・通過", "label_en": "Experience", "description": "Living through something difficult", "visual": "pass-through" }
+    ]
+  },
+  {
+    "id": "over",
+    "core_meaning": "above / across / again",
+    "core_meaning_ja": "上を越える・繰り返す",
+    "senses": [
+      { "id": "transfer", "label": "引き継ぎ・移転", "label_en": "Transfer", "description": "Moving control or possession", "visual": "arc-over" },
+      { "id": "examination", "label": "検討・見直し", "label_en": "Examination", "description": "Reviewing or looking at carefully", "visual": "arc-over" },
+      { "id": "recovery", "label": "回復・克服", "label_en": "Recovery", "description": "Getting past a difficulty", "visual": "arc-over" }
+    ]
+  },
+  {
+    "id": "back",
+    "core_meaning": "return / reversal",
+    "core_meaning_ja": "戻る・元に返す",
+    "senses": [
+      { "id": "return", "label": "帰還・返却", "label_en": "Return", "description": "Going or giving back to origin", "visual": "return" },
+      { "id": "reversal", "label": "反撃・支持", "label_en": "Support/Reversal", "description": "Pushing back or providing backup", "visual": "bounce-back" }
+    ]
+  }
+]

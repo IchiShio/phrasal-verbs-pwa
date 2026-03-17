@@ -211,7 +211,7 @@ export function DailyComplete({ results, sessionXP, streak, totalXP, maxCombo, o
             fontSize: '0.875rem',
           }}
         >
-          One More Set
+          Particle Map
         </button>
 
         {/* Copy */}

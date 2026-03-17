@@ -1,10 +1,11 @@
 import Dexie, { type Table } from 'dexie';
-import type { Verb, Progress, Stats } from '../lib/types';
+import type { Verb, Progress, Stats, Particle } from '../lib/types';
 
 class PhrasalVerbsDB extends Dexie {
   verbs!: Table<Verb>;
   progress!: Table<Progress>;
   stats!: Table<Stats>;
+  particles!: Table<Particle>;
 
   constructor() {
     super('phrasal-verbs-db');
@@ -13,17 +14,35 @@ class PhrasalVerbsDB extends Dexie {
       progress: 'verbId, nextReview',
       stats: 'key'
     });
+    this.version(2).stores({
+      verbs: 'id, particle, sense',
+      progress: 'verbId, nextReview',
+      stats: 'key',
+      particles: 'id'
+    });
   }
 }
 
 export const db = new PhrasalVerbsDB();
 
 export async function seedVerbs() {
-  const count = await db.verbs.count();
-  if (count > 0) return;
+  // Always re-seed to pick up new fields
+  const existing = await db.verbs.toArray();
+  const needsUpdate = existing.length === 0 || !existing[0].particle;
+  if (!needsUpdate) return;
+
   const res = await fetch('/data/verbs.json');
   const verbs: Verb[] = await res.json();
+  await db.verbs.clear();
   await db.verbs.bulkAdd(verbs);
+}
+
+export async function seedParticles() {
+  const count = await db.particles.count();
+  if (count > 0) return;
+  const res = await fetch('/data/particles.json');
+  const particles: Particle[] = await res.json();
+  await db.particles.bulkAdd(particles);
 }
 
 export function getToday(): string {

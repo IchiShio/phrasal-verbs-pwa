@@ -4,7 +4,9 @@ import { setStat } from '../db';
 import { updateSRS, createInitialProgress } from '../lib/srs';
 import { getLevelInfo } from '../lib/types';
 import { playCorrect, playWrong, playCombo, playLevelUp, vibrate } from '../lib/sound';
-import type { QuizItem, QuizState } from '../lib/types';
+import type { QuizItem } from '../lib/types';
+
+type QuizState = 'ready' | 'question' | 'answered' | 'complete';
 
 interface QuizResult {
   verb: string;

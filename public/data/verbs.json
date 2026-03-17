@@ -5,7 +5,12 @@
     "meaning_ja": "（辞書などで）調べる",
     "example": "I need to look up this word in the dictionary.",
     "example_ja": "この単語を辞書で調べる必要がある。",
-    "choices": ["（辞書などで）調べる", "見上げる", "探し回る", "見下ろす"]
+    "choices": ["（辞書などで）調べる", "見上げる", "探し回る", "見下ろす"],
+    "particle": "up",
+    "sense": "discovery",
+    "scene": "You stare at a mysterious word on the page, completely lost. You grab your phone and look up the meaning — suddenly it all clicks into place.",
+    "scene_ja": "ページ上の謎の単語をじっと見つめ、まったくわからない。スマホを手に取って意味を調べると、突然すべてが腑に落ちる。",
+    "particle_explain": "UPの「発見」— 情報を掘り起こして表面に引き上げるイメージ"
   },
   {
     "id": "give_up",
@@ -13,7 +18,12 @@
     "meaning_ja": "あきらめる",
     "example": "Don't give up on your dreams.",
     "example_ja": "夢をあきらめないで。",
-    "choices": ["あきらめる", "与える", "返す", "片付ける"]
+    "choices": ["あきらめる", "与える", "返す", "片付ける"],
+    "particle": "up",
+    "sense": "completion",
+    "scene": "The marathon runner's legs are screaming in pain at mile 20. She wants to give up, but the crowd's cheering carries her to the finish line.",
+    "scene_ja": "マラソンランナーは20マイル地点で足が悲鳴を上げている。彼女はあきらめたいが、観客の声援がゴールまで運んでくれる。",
+    "particle_explain": "UPの「完了」— 持っていたものを全て手放して終わりにする"
   },
   {
     "id": "turn_on",
@@ -21,7 +31,12 @@
     "meaning_ja": "（電源を）つける",
     "example": "Can you turn on the light?",
     "example_ja": "電気をつけてくれる？",
-    "choices": ["（電源を）つける", "回す", "曲がる", "消す"]
+    "choices": ["（電源を）つける", "回す", "曲がる", "消す"],
+    "particle": "on",
+    "sense": "activation",
+    "scene": "The room is pitch black and you can't see a thing. You fumble for the switch and turn on the light — the whole room floods with warmth.",
+    "scene_ja": "部屋は真っ暗で何も見えない。スイッチを手探りで見つけて電気をつけると、部屋全体が温かい光に包まれる。",
+    "particle_explain": "ONの「起動」— スイッチが接触（on）して電流が流れ始める"
   },
   {
     "id": "turn_off",
@@ -29,7 +44,12 @@
     "meaning_ja": "（電源を）消す",
     "example": "Please turn off your phone during the meeting.",
     "example_ja": "会議中は電話を消してください。",
-    "choices": ["（電源を）消す", "曲がる", "つける", "回転する"]
+    "choices": ["（電源を）消す", "曲がる", "つける", "回転する"],
+    "particle": "off",
+    "sense": "separation",
+    "scene": "The movie theater goes silent as the previews begin. An annoying ringtone shatters the peace — the embarrassed owner quickly turns off their phone.",
+    "scene_ja": "予告編が始まり映画館が静まる。迷惑な着信音が静寂を破り、恥ずかしそうなオーナーが急いで電話を消す。",
+    "particle_explain": "OFFの「切断」— 電流の接触を切り離す（off）"
   },
   {
     "id": "pick_up",
@@ -37,7 +57,12 @@
     "meaning_ja": "拾う・迎えに行く",
     "example": "I'll pick up my daughter from school.",
     "example_ja": "娘を学校に迎えに行きます。",
-    "choices": ["拾う・迎えに行く", "選ぶ", "落とす", "置く"]
+    "choices": ["拾う・迎えに行く", "選ぶ", "落とす", "置く"],
+    "particle": "up",
+    "sense": "increase",
+    "scene": "Your daughter is waiting at the school gate, scanning every car. Her face lights up when she sees yours — you pick her up and she chatters about her day the whole ride home.",
+    "scene_ja": "娘が校門で待ちながら、一台一台の車を見ている。あなたの車を見つけると顔がぱっと輝く。迎えに行くと、帰り道ずっとその日の出来事を楽しそうに話してくれる。",
+    "particle_explain": "UPの「上昇」— 地面から持ち上げる・相手を拾い上げるイメージ"
   },
   {
     "id": "put_down",
@@ -45,7 +70,12 @@
     "meaning_ja": "（物を）置く",
     "example": "Put down your phone and listen.",
     "example_ja": "スマホを置いて聞きなさい。",
-    "choices": ["（物を）置く", "持ち上げる", "片付ける", "書き留める"]
+    "choices": ["（物を）置く", "持ち上げる", "片付ける", "書き留める"],
+    "particle": "down",
+    "sense": "settling",
+    "scene": "Your child is talking to you about something important, eyes full of hope. You realize you've been staring at your screen, so you put down your phone and give them your full attention.",
+    "scene_ja": "子供が希望に満ちた目で大事なことを話しかけてくる。画面ばかり見ていたことに気づき、スマホを置いて子供にしっかり向き合う。",
+    "particle_explain": "DOWNの「下に定着」— 手から下の面へ降ろして固定する"
   },
   {
     "id": "get_up",
@@ -53,7 +83,12 @@
     "meaning_ja": "起きる",
     "example": "I get up at 6 every morning.",
     "example_ja": "毎朝6時に起きます。",
-    "choices": ["起きる", "出かける", "到着する", "立ち去る"]
+    "choices": ["起きる", "出かける", "到着する", "立ち去る"],
+    "particle": "up",
+    "sense": "appearance",
+    "scene": "The alarm screams at 6 a.m. and your bed feels like a warm cloud. You force yourself to get up, and the cold morning air hits your face like a wake-up slap.",
+    "scene_ja": "朝6時にアラームが鳴り響き、ベッドは温かい雲のよう。無理やり起きると、冷たい朝の空気が目覚めの平手打ちのように顔を打つ。",
+    "particle_explain": "UPの「出現」— 横たわった状態から上へ立ち上がる"
   },
   {
     "id": "wake_up",
@@ -61,7 +96,12 @@
     "meaning_ja": "目を覚ます",
     "example": "The alarm woke me up at 5 a.m.",
     "example_ja": "朝5時にアラームで目が覚めた。",
-    "choices": ["目を覚ます", "起き上がる", "寝る", "横になる"]
+    "choices": ["目を覚ます", "起き上がる", "寝る", "横になる"],
+    "particle": "up",
+    "sense": "appearance",
+    "scene": "The house is silent at dawn, and a bird begins to sing outside. The melody drifts through the window and gently wakes you up before the alarm even rings.",
+    "scene_ja": "夜明けの家は静まり返り、外で一羽の鳥が歌い始める。そのメロディーが窓から流れ込み、アラームが鳴る前にそっと目を覚まさせてくれる。",
+    "particle_explain": "UPの「出現」— 意識が眠りの底から浮かび上がる"
   },
   {
     "id": "take_off",
@@ -69,7 +109,12 @@
     "meaning_ja": "脱ぐ・離陸する",
     "example": "Please take off your shoes at the door.",
     "example_ja": "玄関で靴を脱いでください。",
-    "choices": ["脱ぐ・離陸する", "着る", "持っていく", "片付ける"]
+    "choices": ["脱ぐ・離陸する", "着る", "持っていく", "片付ける"],
+    "particle": "off",
+    "sense": "separation",
+    "scene": "After a long day of hiking, your feet are burning. You finally sit down and take off your boots — the relief is instant and heavenly.",
+    "scene_ja": "長いハイキングの後、足が焼けるように痛い。やっと座ってブーツを脱ぐと、一瞬で天国のような解放感が広がる。",
+    "particle_explain": "OFFの「分離」— 体にくっついていたものを離す"
   },
   {
     "id": "put_on",
@@ -77,7 +122,12 @@
     "meaning_ja": "着る・身につける",
     "example": "Put on your jacket, it's cold outside.",
     "example_ja": "上着を着て、外は寒いよ。",
-    "choices": ["着る・身につける", "脱ぐ", "置く", "片付ける"]
+    "choices": ["着る・身につける", "脱ぐ", "置く", "片付ける"],
+    "particle": "on",
+    "sense": "activation",
+    "scene": "Snow is falling heavily outside and the wind howls. Mom hands you your warmest coat and says you need to put it on before stepping out into the blizzard.",
+    "scene_ja": "外は大雪で風が唸っている。お母さんが一番暖かいコートを手渡し、吹雪の中に出る前に着なさいと言う。",
+    "particle_explain": "ONの「接触・装着」— 体の上に密着させる"
   },
   {
     "id": "come_back",
@@ -85,7 +135,12 @@
     "meaning_ja": "戻ってくる",
     "example": "When will you come back from your trip?",
     "example_ja": "旅行からいつ戻ってきますか？",
-    "choices": ["戻ってくる", "出発する", "到着する", "通り過ぎる"]
+    "choices": ["戻ってくる", "出発する", "到着する", "通り過ぎる"],
+    "particle": "back",
+    "sense": "return",
+    "scene": "The dog waits by the door every day, watching. After two weeks away, you open the front door and come back — the dog nearly knocks you over with joy.",
+    "scene_ja": "犬は毎日ドアのそばで待ち、見つめている。2週間の留守の後、玄関のドアを開けて戻ってくると、犬が喜びのあまり飛びかかってくる。",
+    "particle_explain": "BACKの「帰還」— 元の場所へ戻ってくる"
   },
   {
     "id": "go_out",
@@ -93,7 +148,12 @@
     "meaning_ja": "外出する",
     "example": "Let's go out for dinner tonight.",
     "example_ja": "今夜は外食しよう。",
-    "choices": ["外出する", "帰宅する", "入る", "通り抜ける"]
+    "choices": ["外出する", "帰宅する", "入る", "通り抜ける"],
+    "particle": "out",
+    "sense": "visibility",
+    "scene": "You've been cooped up at home all weekend staring at screens. Your friend calls and convinces you to go out — the fresh evening air and city lights feel magical.",
+    "scene_ja": "週末ずっと家に閉じこもって画面を見ていた。友達が電話してきて外出することに。夕方の新鮮な空気と街の灯りが魔法のように感じる。",
+    "particle_explain": "OUTの「外へ」— 内側（家）から外の世界に出る"
   },
   {
     "id": "find_out",
@@ -101,7 +161,12 @@
     "meaning_ja": "見つけ出す・発見する",
     "example": "I need to find out what happened.",
     "example_ja": "何が起きたのか調べなければならない。",
-    "choices": ["見つけ出す・発見する", "探す", "忘れる", "隠す"]
+    "choices": ["見つけ出す・発見する", "探す", "忘れる", "隠す"],
+    "particle": "out",
+    "sense": "discovery",
+    "scene": "Something doesn't add up about the company's finances. The journalist digs through thousands of documents and finally finds out the truth — someone has been stealing millions.",
+    "scene_ja": "会社の財務に何かが合わない。記者は何千もの書類を調べ上げ、ついに真実を見つけ出す。誰かが何百万ドルも盗んでいたのだ。",
+    "particle_explain": "OUTの「発見」— 隠れていた情報を外に引き出す"
   },
   {
     "id": "figure_out",
@@ -109,7 +174,12 @@
     "meaning_ja": "理解する・解決する",
     "example": "I can't figure out how to use this app.",
     "example_ja": "このアプリの使い方がわからない。",
-    "choices": ["理解する・解決する", "計算する", "描く", "想像する"]
+    "choices": ["理解する・解決する", "計算する", "描く", "想像する"],
+    "particle": "out",
+    "sense": "discovery",
+    "scene": "The math problem has haunted you for three days. You stare at your notebook in the middle of the night, and suddenly you figure out the answer — you literally jump out of your chair.",
+    "scene_ja": "その数学の問題に3日間悩まされていた。真夜中にノートをじっと見つめていると、突然答えがわかる。文字通り椅子から飛び上がる。",
+    "particle_explain": "OUTの「発見」— 混乱の中から答えを引き出す"
   },
   {
     "id": "bring_up",
@@ -117,7 +187,12 @@
     "meaning_ja": "話題に出す・育てる",
     "example": "She brought up an interesting point in the meeting.",
     "example_ja": "彼女は会議で興味深い点を指摘した。",
-    "choices": ["話題に出す・育てる", "持ってくる", "運ぶ", "下ろす"]
+    "choices": ["話題に出す・育てる", "持ってくる", "運ぶ", "下ろす"],
+    "particle": "up",
+    "sense": "appearance",
+    "scene": "The meeting is about to end with a terrible decision nobody wants to challenge. She takes a deep breath and brings up the problem everyone has been avoiding.",
+    "scene_ja": "誰も異議を唱えたくないひどい決定で会議が終わりそうになる。彼女は深呼吸し、皆が避けていた問題を話題に出す。",
+    "particle_explain": "UPの「出現」— 隠れていた話題を表面に引き上げる"
   },
   {
     "id": "point_out",
@@ -125,7 +200,12 @@
     "meaning_ja": "指摘する",
     "example": "He pointed out several errors in the report.",
     "example_ja": "彼はレポートの中のいくつかの誤りを指摘した。",
-    "choices": ["指摘する", "示す", "注目する", "無視する"]
+    "choices": ["指摘する", "示す", "注目する", "無視する"],
+    "particle": "out",
+    "sense": "visibility",
+    "scene": "Everyone is praising the beautiful report, but something is wrong. The intern nervously points out three calculation errors that would have cost the company millions.",
+    "scene_ja": "皆がその美しいレポートを称賛しているが、何かがおかしい。インターンが緊張しながら、会社に何百万もの損失を与えかねない3つの計算ミスを指摘する。",
+    "particle_explain": "OUTの「可視化」— 見えにくいものを外に出して見えるようにする"
   },
   {
     "id": "come_up_with",
@@ -133,7 +213,12 @@
     "meaning_ja": "思いつく",
     "example": "We need to come up with a new plan.",
     "example_ja": "新しい計画を思いつく必要がある。",
-    "choices": ["思いつく", "追いつく", "出てくる", "近づく"]
+    "choices": ["思いつく", "追いつく", "出てくる", "近づく"],
+    "particle": "up",
+    "sense": "appearance",
+    "scene": "The team has been brainstorming for hours with no solution. Coffee cups pile up on the table. Then the quietest person in the room comes up with a brilliant idea that changes everything.",
+    "scene_ja": "チームは何時間もブレストしても解決策が出ない。テーブルにはコーヒーカップが積み上がる。すると部屋で一番静かな人が、すべてを変える素晴らしいアイデアを思いつく。",
+    "particle_explain": "UPの「出現」— アイデアが心の底から浮かび上がってくる"
   },
   {
     "id": "get_along",
@@ -141,7 +226,12 @@
     "meaning_ja": "仲良くする",
     "example": "Do you get along with your neighbors?",
     "example_ja": "ご近所さんとは仲良くしていますか？",
-    "choices": ["仲良くする", "進む", "離れる", "我慢する"]
+    "choices": ["仲良くする", "進む", "離れる", "我慢する"],
+    "particle": "on",
+    "sense": "continuation",
+    "scene": "The new kid at school sits alone at lunch every day. One day your child sits next to them, and within a week they get along like they've been friends forever.",
+    "scene_ja": "転校生が毎日お昼をひとりで食べている。ある日あなたの子供が隣に座り、一週間でまるでずっと友達だったかのように仲良くなる。",
+    "particle_explain": "ONの「継続」— 一緒に進み続けられる関係"
   },
   {
     "id": "break_up",
@@ -149,7 +239,12 @@
     "meaning_ja": "別れる・解散する",
     "example": "They broke up after three years together.",
     "example_ja": "3年付き合った後、彼らは別れた。",
-    "choices": ["別れる・解散する", "壊す", "割る", "始める"]
+    "choices": ["別れる・解散する", "壊す", "割る", "始める"],
+    "particle": "up",
+    "sense": "completion",
+    "scene": "They were the couple everyone envied — always laughing, always together. Then one rainy Tuesday, she came home and said it was over. They broke up without a single shout, just silence.",
+    "scene_ja": "誰もが羨むカップルだった。いつも笑い、いつも一緒。でもある雨の火曜日、彼女が帰ってきて終わりだと言った。叫び声ひとつなく、ただ沈黙の中で別れた。",
+    "particle_explain": "UPの「完了」— 関係が完全にバラバラになって終わる"
   },
   {
     "id": "make_up",
@@ -157,7 +252,12 @@
     "meaning_ja": "仲直りする・でっち上げる",
     "example": "They had a fight but quickly made up.",
     "example_ja": "彼らは喧嘩したがすぐに仲直りした。",
-    "choices": ["仲直りする・でっち上げる", "化粧する", "作る", "壊す"]
+    "choices": ["仲直りする・でっち上げる", "化粧する", "作る", "壊す"],
+    "particle": "up",
+    "sense": "completion",
+    "scene": "Two best friends haven't spoken for a week after a stupid argument. One sends a silly meme at midnight. The other laughs and replies — just like that, they make up.",
+    "scene_ja": "親友二人がくだらない喧嘩の後一週間口を利いていない。一人が深夜にくだらないミームを送る。もう一人が笑って返信する。それだけで仲直りする。",
+    "particle_explain": "UPの「完了」— 壊れた関係を修復して完全な状態に戻す"
   },
   {
     "id": "look_after",
@@ -165,7 +265,12 @@
     "meaning_ja": "世話をする",
     "example": "Can you look after my cat while I'm away?",
     "example_ja": "留守の間、猫の世話をしてくれますか？",
-    "choices": ["世話をする", "探す", "見つける", "追いかける"]
+    "choices": ["世話をする", "探す", "見つける", "追いかける"],
+    "particle": "over",
+    "sense": "examination",
+    "scene": "Your neighbor is going on vacation and her elderly cat needs medicine twice a day. She trusts you completely and asks you to look after him for two weeks.",
+    "scene_ja": "隣人が旅行に出かけるが、高齢の猫は一日二回薬が必要。彼女はあなたを完全に信頼し、2週間猫の世話をしてほしいと頼む。",
+    "particle_explain": "OVERの「見渡し」— 目を配って注意深く面倒を見る"
   },
   {
     "id": "grow_up",
@@ -173,7 +278,12 @@
     "meaning_ja": "成長する・大人になる",
     "example": "I grew up in a small town.",
     "example_ja": "小さな町で育ちました。",
-    "choices": ["成長する・大人になる", "大きくなる", "伸びる", "増える"]
+    "choices": ["成長する・大人になる", "大きくなる", "伸びる", "増える"],
+    "particle": "up",
+    "sense": "completion",
+    "scene": "You flip through an old photo album and see yourself as a toddler in your grandmother's garden. It hits you that you grew up in that tiny house, and now it feels impossibly small.",
+    "scene_ja": "古いアルバムをめくると、祖母の庭で幼児だった自分が写っている。あの小さな家で成長したのだと実感し、今ではあり得ないほど小さく感じる。",
+    "particle_explain": "UPの「完了」— 成長が上へ向かって完成に至る"
   },
   {
     "id": "keep_up",
@@ -181,7 +291,12 @@
     "meaning_ja": "ついていく・維持する",
     "example": "It's hard to keep up with the latest technology.",
     "example_ja": "最新技術についていくのは大変だ。",
-    "choices": ["ついていく・維持する", "保管する", "守る", "止める"]
+    "choices": ["ついていく・維持する", "保管する", "守る", "止める"],
+    "particle": "up",
+    "sense": "improvement",
+    "scene": "New frameworks appear every month. Just when you master one, three more are released. It's exhausting trying to keep up, but you know falling behind means getting left behind.",
+    "scene_ja": "毎月新しいフレームワークが登場する。一つをマスターしたと思ったら、さらに3つがリリースされる。ついていくのは疲れるが、遅れることは取り残されることだとわかっている。",
+    "particle_explain": "UPの「維持」— 上がっていくレベルに合わせて保ち続ける"
   },
   {
     "id": "catch_up",
@@ -189,7 +304,12 @@
     "meaning_ja": "追いつく",
     "example": "I need to catch up on my homework.",
     "example_ja": "宿題に追いつかなければならない。",
-    "choices": ["追いつく", "捕まえる", "逃げる", "飛び越える"]
+    "choices": ["追いつく", "捕まえる", "逃げる", "飛び越える"],
+    "particle": "up",
+    "sense": "improvement",
+    "scene": "You missed a week of school due to the flu. Everyone else is on chapter 10, and you're stuck on chapter 7. You stay up late every night to catch up before the exam.",
+    "scene_ja": "インフルで一週間学校を休んだ。みんなは第10章なのに、自分は第7章のまま。試験前に追いつくため毎晩遅くまで勉強する。",
+    "particle_explain": "UPの「上昇」— 前にいる相手のレベルまで引き上げる"
   },
   {
     "id": "set_up",
@@ -197,7 +317,12 @@
     "meaning_ja": "設置する・準備する",
     "example": "Let's set up the meeting room.",
     "example_ja": "会議室を準備しよう。",
-    "choices": ["設置する・準備する", "片付ける", "座る", "置く"]
+    "choices": ["設置する・準備する", "片付ける", "座る", "置く"],
+    "particle": "up",
+    "sense": "completion",
+    "scene": "The conference starts in one hour and the room is completely empty. You rush to set up tables, projectors, and name cards — everything clicks into place with five minutes to spare.",
+    "scene_ja": "あと1時間で会議が始まるのに部屋は完全に空。急いでテーブル、プロジェクター、名札を準備する。残り5分ですべてがぴったり整う。",
+    "particle_explain": "UPの「完了」— ゼロの状態から立ち上げて完成させる"
   },
   {
     "id": "carry_out",
@@ -205,7 +330,12 @@
     "meaning_ja": "実行する",
     "example": "We need to carry out the plan carefully.",
     "example_ja": "計画を慎重に実行する必要がある。",
-    "choices": ["実行する", "運ぶ", "外に出す", "捨てる"]
+    "choices": ["実行する", "運ぶ", "外に出す", "捨てる"],
+    "particle": "out",
+    "sense": "completion",
+    "scene": "Months of planning are on paper — every detail, every risk analyzed. Now the team gathers at dawn to carry out the rescue mission that will save twelve trapped miners.",
+    "scene_ja": "何ヶ月もの計画が紙の上にある。細部まで、リスクまで分析済み。今、チームが夜明けに集結し、閉じ込められた12人の鉱夫を救う救助作戦を実行する。",
+    "particle_explain": "OUTの「完遂」— 計画を最後まで外に出し切って完了する"
   },
   {
     "id": "work_out",
@@ -213,7 +343,12 @@
     "meaning_ja": "運動する・うまくいく",
     "example": "I work out at the gym three times a week.",
     "example_ja": "週3回ジムで運動しています。",
-    "choices": ["運動する・うまくいく", "働く", "解決する", "出勤する"]
+    "choices": ["運動する・うまくいく", "働く", "解決する", "出勤する"],
+    "particle": "out",
+    "sense": "completion",
+    "scene": "After months of failed diets and broken promises, she laces up her sneakers one more time. She decides to work out every morning — and this time, she actually sticks with it.",
+    "scene_ja": "何ヶ月もダイエットに失敗し、約束を破ってきた後、彼女はもう一度スニーカーの紐を結ぶ。毎朝運動することに決め、今度こそ本当に続ける。",
+    "particle_explain": "OUTの「完遂」— 体を限界まで出し切る・問題を最後まで解く"
   },
   {
     "id": "show_up",
@@ -221,7 +356,12 @@
     "meaning_ja": "現れる・姿を見せる",
     "example": "He didn't show up for the party.",
     "example_ja": "彼はパーティーに現れなかった。",
-    "choices": ["現れる・姿を見せる", "見せる", "表示する", "消える"]
+    "choices": ["現れる・姿を見せる", "見せる", "表示する", "消える"],
+    "particle": "up",
+    "sense": "appearance",
+    "scene": "The bride waits at the altar, the church packed with nervous guests. Five agonizing minutes pass. Then the doors swing open and the groom finally shows up, out of breath but grinning.",
+    "scene_ja": "花嫁が祭壇で待ち、教会は緊張した招待客でいっぱい。苦しい5分が過ぎる。そしてドアが開き、花婿がついに現れる。息を切らしているが満面の笑みで。",
+    "particle_explain": "UPの「出現」— どこかから姿を現して視界に入る"
   },
   {
     "id": "drop_off",
@@ -229,7 +369,12 @@
     "meaning_ja": "降ろす・届ける",
     "example": "I'll drop off the package at your office.",
     "example_ja": "荷物をオフィスに届けます。",
-    "choices": ["降ろす・届ける", "落とす", "拾う", "捨てる"]
+    "choices": ["降ろす・届ける", "落とす", "拾う", "捨てる"],
+    "particle": "off",
+    "sense": "separation",
+    "scene": "It's the first day of kindergarten. Your child clutches your hand, eyes wide with fear. You kneel down, hug them tight, and drop them off — walking away is the hardest part.",
+    "scene_ja": "幼稚園の初日。子供があなたの手をぎゅっと握り、目を大きく見開いて怯えている。膝をついてぎゅっと抱きしめ、子供を降ろす。立ち去るのが一番辛い。",
+    "particle_explain": "OFFの「分離」— 乗り物や手元から切り離して降ろす"
   },
   {
     "id": "run_into",
@@ -237,7 +382,12 @@
     "meaning_ja": "偶然出会う",
     "example": "I ran into my old friend at the supermarket.",
     "example_ja": "スーパーで旧友にばったり会った。",
-    "choices": ["偶然出会う", "走る", "ぶつかる", "逃げる"]
+    "choices": ["偶然出会う", "走る", "ぶつかる", "逃げる"],
+    "particle": "into",
+    "sense": "entry",
+    "scene": "You're grabbing milk at the supermarket in your pajamas, hair a mess. Of course, that's when you run into your ex — looking absolutely perfect.",
+    "scene_ja": "パジャマ姿で髪もボサボサのまま、スーパーで牛乳を取ろうとしている。もちろん、そんな時に限って元カレにばったり会う。相手は完璧な見た目で。",
+    "particle_explain": "INTOの「突入」— 予期せず相手の空間に飛び込む"
   },
   {
     "id": "calm_down",
@@ -245,7 +395,12 @@
     "meaning_ja": "落ち着く",
     "example": "Please calm down and tell me what happened.",
     "example_ja": "落ち着いて何が起きたか教えて。",
-    "choices": ["落ち着く", "静かにする", "座る", "横になる"]
+    "choices": ["落ち着く", "静かにする", "座る", "横になる"],
+    "particle": "down",
+    "sense": "decrease",
+    "scene": "Your heart is pounding, your hands are shaking — the job interview is in five minutes. You close your eyes, breathe deeply, and slowly calm down enough to walk in with confidence.",
+    "scene_ja": "心臓がバクバクし、手が震えている。面接まであと5分。目を閉じ、深呼吸し、ゆっくり落ち着いて、自信を持って歩いていけるようになる。",
+    "particle_explain": "DOWNの「減少」— 高ぶった感情が下がって静まる"
   },
   {
     "id": "cheer_up",
@@ -253,7 +408,12 @@
     "meaning_ja": "元気づける・元気を出す",
     "example": "Cheer up! Things will get better.",
     "example_ja": "元気出して！きっと良くなるよ。",
-    "choices": ["元気づける・元気を出す", "応援する", "叫ぶ", "笑う"]
+    "choices": ["元気づける・元気を出す", "応援する", "叫ぶ", "笑う"],
+    "particle": "up",
+    "sense": "increase",
+    "scene": "Your friend has been crying in their room all day after losing their job. You show up with ice cream and bad jokes. Slowly, you manage to cheer them up with the world's worst puns.",
+    "scene_ja": "友達が失業して一日中部屋で泣いている。アイスクリームとくだらないジョークを持って訪ねる。世界一ひどいダジャレで、少しずつ元気づけることに成功する。",
+    "particle_explain": "UPの「上昇」— 沈んだ気持ちを上に引き上げる"
   },
   {
     "id": "freak_out",
@@ -261,7 +421,12 @@
     "meaning_ja": "パニックになる",
     "example": "Don't freak out, it's just a spider.",
     "example_ja": "パニックにならないで、ただのクモだよ。",
-    "choices": ["パニックになる", "怒る", "驚く", "泣く"]
+    "choices": ["パニックになる", "怒る", "驚く", "泣く"],
+    "particle": "out",
+    "sense": "exclusion",
+    "scene": "You open your laptop and see 47 missed calls from your boss. Your stomach drops and your mind goes blank. You completely freak out before realizing it was a glitch.",
+    "scene_ja": "ノートパソコンを開くと上司からの不在着信が47件。胃がキュッとなり頭が真っ白に。完全にパニックになるが、それがただの不具合だったと気づく。",
+    "particle_explain": "OUTの「逸脱」— 正常な精神状態の外に飛び出す"
   },
   {
     "id": "pass_out",
@@ -269,7 +434,12 @@
     "meaning_ja": "気絶する・配る",
     "example": "She passed out from the heat.",
     "example_ja": "彼女は暑さで気絶した。",
-    "choices": ["気絶する・配る", "通り過ぎる", "合格する", "渡す"]
+    "choices": ["気絶する・配る", "通り過ぎる", "合格する", "渡す"],
+    "particle": "out",
+    "sense": "extinction",
+    "scene": "The summer sun is merciless at 40 degrees. A runner in the marathon stumbles, her vision blurs, and she passes out right before the finish line.",
+    "scene_ja": "夏の太陽は40度で容赦がない。マラソンのランナーがよろめき、視界がぼやけ、ゴール直前で気絶する。",
+    "particle_explain": "OUTの「消滅」— 意識が消えてなくなる"
   },
   {
     "id": "burn_out",
@@ -277,7 +447,12 @@
     "meaning_ja": "燃え尽きる",
     "example": "Many teachers burn out after a few years.",
     "example_ja": "多くの教師は数年で燃え尽きる。",
-    "choices": ["燃え尽きる", "燃える", "消す", "火をつける"]
+    "choices": ["燃え尽きる", "燃える", "消す", "火をつける"],
+    "particle": "out",
+    "sense": "extinction",
+    "scene": "She used to love teaching — staying late, decorating her classroom, writing personal notes. After five years of budget cuts and exhaustion, she finally burns out and hands in her resignation.",
+    "scene_ja": "彼女は教えることが大好きだった。遅くまで残り、教室を飾り、一人一人にメモを書いた。5年間の予算削減と疲労の末、ついに燃え尽き、辞表を提出する。",
+    "particle_explain": "OUTの「消滅」— 燃料がなくなり火が消える（エネルギー枯渇）"
   },
   {
     "id": "turn_out",
@@ -285,7 +460,12 @@
     "meaning_ja": "結局〜だとわかる",
     "example": "It turned out that he was right all along.",
     "example_ja": "結局彼がずっと正しかったことがわかった。",
-    "choices": ["結局〜だとわかる", "外に出る", "回す", "消す"]
+    "choices": ["結局〜だとわかる", "外に出る", "回す", "消す"],
+    "particle": "out",
+    "sense": "visibility",
+    "scene": "Everyone mocked his crazy business idea for years. He kept working in silence, ignoring the laughs. It turned out he was building the next billion-dollar company.",
+    "scene_ja": "皆が彼のクレイジーなビジネスアイデアを何年も馬鹿にした。彼は笑いを無視して黙々と取り組んだ。結局、彼は次の10億ドル企業を作っていたのだ。",
+    "particle_explain": "OUTの「判明」— 隠れていた結果が外に現れて見える"
   },
   {
     "id": "end_up",
@@ -293,7 +473,12 @@
     "meaning_ja": "結局〜になる",
     "example": "We ended up staying home because of the rain.",
     "example_ja": "雨のせいで結局家にいることになった。",
-    "choices": ["結局〜になる", "終わる", "やめる", "始める"]
+    "choices": ["結局〜になる", "終わる", "やめる", "始める"],
+    "particle": "up",
+    "sense": "completion",
+    "scene": "You planned a perfect beach day: sunscreen, towels, picnic basket. Dark clouds rolled in at noon. You ended up watching movies on the couch with popcorn instead — honestly, it was better.",
+    "scene_ja": "完璧なビーチ日和を計画した。日焼け止め、タオル、ピクニックバスケット。正午に暗い雲が押し寄せ、結局ソファでポップコーンを食べながら映画を見た。正直、そっちのほうがよかった。",
+    "particle_explain": "UPの「完了」— あれこれあった末に最終的な結果に行き着く"
   },
   {
     "id": "come_across",
@@ -301,7 +486,12 @@
     "meaning_ja": "偶然見つける",
     "example": "I came across an interesting article online.",
     "example_ja": "ネットで面白い記事を偶然見つけた。",
-    "choices": ["偶然見つける", "横切る", "近づく", "離れる"]
+    "choices": ["偶然見つける", "横切る", "近づく", "離れる"],
+    "particle": "over",
+    "sense": "transfer",
+    "scene": "You're cleaning the attic and moving dusty boxes. Behind an old suitcase, you come across a love letter your grandfather wrote in 1952 — your hands tremble as you read it.",
+    "scene_ja": "屋根裏を掃除してほこりだらけの箱を動かしている。古いスーツケースの後ろで、1952年に祖父が書いたラブレターを偶然見つける。読みながら手が震える。",
+    "particle_explain": "OVERの「横断」— 道を横切る途中で偶然ぶつかる"
   },
   {
     "id": "look_forward_to",
@@ -309,7 +499,12 @@
     "meaning_ja": "楽しみにする",
     "example": "I'm looking forward to the vacation.",
     "example_ja": "休暇を楽しみにしています。",
-    "choices": ["楽しみにする", "前を見る", "期待しない", "心配する"]
+    "choices": ["楽しみにする", "前を見る", "期待しない", "心配する"],
+    "particle": "on",
+    "sense": "continuation",
+    "scene": "Only three more days of work until your flight to Okinawa. You can already feel the sand between your toes. You're looking forward to that first moment when the ocean breeze hits your face.",
+    "scene_ja": "沖縄行きのフライトまであと3日の仕事。もう足の指の間の砂が感じられる。海風が顔に当たるあの最初の瞬間を楽しみにしている。",
+    "particle_explain": "ONの「継続」— 気持ちが前方に向かって進み続ける"
   },
   {
     "id": "deal_with",
@@ -317,7 +512,12 @@
     "meaning_ja": "対処する",
     "example": "We need to deal with this problem now.",
     "example_ja": "今すぐこの問題に対処する必要がある。",
-    "choices": ["対処する", "取引する", "配る", "扱う"]
+    "choices": ["対処する", "取引する", "配る", "扱う"],
+    "particle": "through",
+    "sense": "experience",
+    "scene": "The customer is screaming on the phone, threatening to sue. Your hands are sweating, but you stay calm and deal with the situation — ten minutes later, they're actually thanking you.",
+    "scene_ja": "顧客が電話で怒鳴り、訴えると脅している。手は汗ばむが冷静を保ちその状況に対処する。10分後、その顧客は実際にお礼を言っている。",
+    "particle_explain": "THROUGHの「経験」— 問題の中を通り抜けて処理する"
   },
   {
     "id": "put_up_with",
@@ -325,7 +525,12 @@
     "meaning_ja": "我慢する",
     "example": "I can't put up with this noise anymore.",
     "example_ja": "この騒音にはもう我慢できない。",
-    "choices": ["我慢する", "置く", "立てる", "上げる"]
+    "choices": ["我慢する", "置く", "立てる", "上げる"],
+    "particle": "up",
+    "sense": "completion",
+    "scene": "Your neighbor practices drums at midnight every single night. You've smiled politely for six months. Tonight, you can't put up with it anymore — you march upstairs and knock on the door.",
+    "scene_ja": "隣人が毎晩深夜にドラムを練習する。6ヶ月間礼儀正しく微笑んできた。今夜はもう我慢できない。上の階まで行ってドアをノックする。",
+    "particle_explain": "UPの「持続」— 不快なものを抱え上げて耐え続ける"
   },
   {
     "id": "get_rid_of",
@@ -333,7 +538,12 @@
     "meaning_ja": "取り除く・処分する",
     "example": "We need to get rid of these old boxes.",
     "example_ja": "これらの古い箱を処分する必要がある。",
-    "choices": ["取り除く・処分する", "手に入れる", "乗る", "隠す"]
+    "choices": ["取り除く・処分する", "手に入れる", "乗る", "隠す"],
+    "particle": "away",
+    "sense": "disappearance",
+    "scene": "Your garage is packed with ten years of junk you'll never use again. One Saturday morning, you finally get rid of everything — and for the first time, you can actually park your car inside.",
+    "scene_ja": "ガレージには10年分の二度と使わないガラクタが詰まっている。ある土曜の朝、ついに全部処分する。初めて、車を実際に中に駐車できるようになる。",
+    "particle_explain": "AWAYの「消失」— 不要なものを遠くへ追いやって消す"
   },
   {
     "id": "look_down_on",
@@ -341,7 +551,12 @@
     "meaning_ja": "見下す",
     "example": "Nobody should look down on others.",
     "example_ja": "誰も他人を見下すべきではない。",
-    "choices": ["見下す", "見下ろす", "尊敬する", "無視する"]
+    "choices": ["見下す", "見下ろす", "尊敬する", "無視する"],
+    "particle": "down",
+    "sense": "decrease",
+    "scene": "The rich kids at school always ignored the janitor. But one day he saved a student's life with CPR. Nobody dared to look down on him ever again.",
+    "scene_ja": "学校の金持ちの子たちはいつも用務員を無視していた。でもある日、彼がCPRで生徒の命を救った。二度と彼を見下す者はいなくなった。",
+    "particle_explain": "DOWNの「低下」— 相手を自分より下に見る"
   },
   {
     "id": "make_up_for",
@@ -349,7 +564,12 @@
     "meaning_ja": "埋め合わせる",
     "example": "He tried to make up for his mistake.",
     "example_ja": "彼は間違いを埋め合わせようとした。",
-    "choices": ["埋め合わせる", "作り上げる", "仲直りする", "化粧する"]
+    "choices": ["埋め合わせる", "作り上げる", "仲直りする", "化粧する"],
+    "particle": "up",
+    "sense": "completion",
+    "scene": "He forgot their anniversary and she cried. The next day, he cooked her favorite meal, bought flowers, and wrote a heartfelt letter to make up for his terrible memory.",
+    "scene_ja": "記念日を忘れて彼女は泣いた。翌日、彼は彼女の好きな料理を作り、花を買い、心のこもった手紙を書いて、ひどい物忘れの埋め合わせをした。",
+    "particle_explain": "UPの「完了」— 足りない分を補って元の状態まで満たす"
   },
   {
     "id": "live_up_to",
@@ -357,7 +577,12 @@
     "meaning_ja": "期待に応える",
     "example": "The movie didn't live up to my expectations.",
     "example_ja": "その映画は期待に応えなかった。",
-    "choices": ["期待に応える", "生きていく", "住み続ける", "追いつく"]
+    "choices": ["期待に応える", "生きていく", "住み続ける", "追いつく"],
+    "particle": "up",
+    "sense": "improvement",
+    "scene": "The trailer was incredible — epic music, stunning visuals, amazing cast. You bought tickets on day one. Sadly, the movie didn't live up to the hype, and you left the theater disappointed.",
+    "scene_ja": "予告編は最高だった。壮大な音楽、圧巻のビジュアル、素晴らしいキャスト。初日にチケットを買った。残念ながら映画は期待に応えず、がっかりして映画館を出た。",
+    "particle_explain": "UPの「到達」— 設定された高い基準まで上がりきる"
   },
   {
     "id": "run_out_of",
@@ -365,7 +590,12 @@
     "meaning_ja": "使い果たす",
     "example": "We've run out of milk.",
     "example_ja": "牛乳がなくなった。",
-    "choices": ["使い果たす", "走り去る", "逃げ出す", "飛び出す"]
+    "choices": ["使い果たす", "走り去る", "逃げ出す", "飛び出す"],
+    "particle": "out",
+    "sense": "extinction",
+    "scene": "You're baking a birthday cake at 11 p.m. and the recipe needs three eggs. You open the fridge and realize you've run out of eggs — the store closes in ten minutes.",
+    "scene_ja": "夜11時に誕生日ケーキを焼いていて、レシピには卵3個が必要。冷蔵庫を開けると卵を使い果たしたことに気づく。店はあと10分で閉まる。",
+    "particle_explain": "OUTの「消滅」— 中身が全て外に出て空になる"
   },
   {
     "id": "look_up_to",
@@ -373,7 +603,12 @@
     "meaning_ja": "尊敬する",
     "example": "Many children look up to their parents.",
     "example_ja": "多くの子供は親を尊敬している。",
-    "choices": ["尊敬する", "見上げる", "調べる", "見下す"]
+    "choices": ["尊敬する", "見上げる", "調べる", "見下す"],
+    "particle": "up",
+    "sense": "increase",
+    "scene": "Your daughter watches you study for your degree every night after putting her to bed. Years later, in her graduation speech, she says she always looked up to you for never giving up on your education.",
+    "scene_ja": "娘は毎晩寝かしつけた後にあなたが学位のために勉強するのを見ている。何年も後、卒業スピーチで、教育を諦めなかったあなたをずっと尊敬していたと語る。",
+    "particle_explain": "UPの「上昇」— 相手を自分より上の存在として見上げる"
   },
   {
     "id": "get_over",
@@ -381,7 +616,12 @@
     "meaning_ja": "乗り越える・回復する",
     "example": "It took me a long time to get over the flu.",
     "example_ja": "インフルエンザから回復するのに長い時間がかかった。",
-    "choices": ["乗り越える・回復する", "超える", "渡る", "避ける"]
+    "choices": ["乗り越える・回復する", "超える", "渡る", "避ける"],
+    "particle": "over",
+    "sense": "recovery",
+    "scene": "The breakup left you unable to eat for days. Music reminded you of them, places reminded you of them. But one morning you woke up and realized you'd finally gotten over it — the sky looked blue again.",
+    "scene_ja": "失恋で何日も食べられなかった。音楽があの人を思い出させ、場所があの人を思い出させた。でもある朝目覚めて、ついに乗り越えたと気づいた。空がまた青く見えた。",
+    "particle_explain": "OVERの「回復」— 障害を乗り越えて向こう側へ渡る"
   },
   {
     "id": "go_through",
@@ -389,7 +629,12 @@
     "meaning_ja": "経験する・通り抜ける",
     "example": "She went through a difficult time last year.",
     "example_ja": "彼女は去年困難な時期を経験した。",
-    "choices": ["経験する・通り抜ける", "行く", "通過する", "終わる"]
+    "choices": ["経験する・通り抜ける", "行く", "通過する", "終わる"],
+    "particle": "through",
+    "sense": "experience",
+    "scene": "Last year she lost her job, her apartment, and her health — all within three months. She went through the darkest period of her life, but somehow came out the other side stronger.",
+    "scene_ja": "去年、彼女は3ヶ月の間に仕事、アパート、そして健康を失った。人生で最も暗い時期を経験したが、なぜかその向こう側に出た時、以前より強くなっていた。",
+    "particle_explain": "THROUGHの「経験」— 困難の中を通り抜けて経験する"
   },
   {
     "id": "hang_out",
@@ -397,7 +642,12 @@
     "meaning_ja": "遊ぶ・ぶらぶらする",
     "example": "Let's hang out this weekend.",
     "example_ja": "今週末遊ぼう。",
-    "choices": ["遊ぶ・ぶらぶらする", "ぶら下がる", "干す", "出かける"]
+    "choices": ["遊ぶ・ぶらぶらする", "ぶら下がる", "干す", "出かける"],
+    "particle": "out",
+    "sense": "visibility",
+    "scene": "No plans, no agenda — just two old friends, a park bench, and terrible coffee from a vending machine. Sometimes the best memories come from just hanging out with no purpose at all.",
+    "scene_ja": "計画なし、予定なし。ただ旧友二人とベンチと自販機のまずいコーヒー。目的もなくぶらぶらするだけの時間が、最高の思い出になることがある。",
+    "particle_explain": "OUTの「外へ」— 家の外に出て人と過ごす"
   },
   {
     "id": "call_off",
@@ -405,7 +655,12 @@
     "meaning_ja": "中止する",
     "example": "They called off the game due to rain.",
     "example_ja": "雨のため試合は中止になった。",
-    "choices": ["中止する", "電話する", "呼ぶ", "延期する"]
+    "choices": ["中止する", "電話する", "呼ぶ", "延期する"],
+    "particle": "off",
+    "sense": "separation",
+    "scene": "The outdoor wedding was planned for months — flowers, caterers, a string quartet. Then the weather forecast showed a typhoon. They had to call off the ceremony just twelve hours before.",
+    "scene_ja": "屋外の結婚式を何ヶ月もかけて計画した。花、ケータリング、弦楽四重奏。ところが天気予報で台風が。わずか12時間前にセレモニーを中止せざるを得なかった。",
+    "particle_explain": "OFFの「中断」— 進行中の予定を切り離して止める"
   },
   {
     "id": "cut_down_on",
@@ -413,7 +668,12 @@
     "meaning_ja": "減らす",
     "example": "You should cut down on sugar.",
     "example_ja": "砂糖を減らした方がいいよ。",
-    "choices": ["減らす", "切る", "倒す", "やめる"]
+    "choices": ["減らす", "切る", "倒す", "やめる"],
+    "particle": "down",
+    "sense": "decrease",
+    "scene": "The doctor shows you the blood test results with a serious face. Your sugar levels are dangerously high. She tells you firmly that you must cut down on sweets starting today.",
+    "scene_ja": "医者が深刻な顔で血液検査の結果を見せる。血糖値が危険なほど高い。今日から甘いものを減らさなければならないと厳しく言われる。",
+    "particle_explain": "DOWNの「減少」— 量を切り落として下げる"
   },
   {
     "id": "look_into",
@@ -421,7 +681,12 @@
     "meaning_ja": "調査する",
     "example": "The police are looking into the case.",
     "example_ja": "警察はその事件を調査している。",
-    "choices": ["調査する", "中を見る", "覗く", "探す"]
+    "choices": ["調査する", "中を見る", "覗く", "探す"],
+    "particle": "into",
+    "sense": "investigation",
+    "scene": "Money keeps disappearing from the company account — small amounts, but consistently. The CEO hires a forensic accountant to look into the mystery, and what they find shocks everyone.",
+    "scene_ja": "会社の口座から少額だが継続的にお金が消えている。CEOがフォレンジック会計士を雇ってその謎を調査させると、発見した事実に全員が衝撃を受ける。",
+    "particle_explain": "INTOの「調査」— 問題の中に深く入り込んで探る"
   },
   {
     "id": "take_over",
@@ -429,7 +694,12 @@
     "meaning_ja": "引き継ぐ・支配する",
     "example": "She took over the company after her father retired.",
     "example_ja": "父が引退した後、彼女が会社を引き継いだ。",
-    "choices": ["引き継ぐ・支配する", "持っていく", "奪う", "超える"]
+    "choices": ["引き継ぐ・支配する", "持っていく", "奪う", "超える"],
+    "particle": "over",
+    "sense": "transfer",
+    "scene": "Her father built the company from nothing over forty years. On his last day, he handed her the office key with trembling hands. She took over not just a business, but his life's work.",
+    "scene_ja": "父は40年かけてゼロから会社を築いた。最後の日、震える手でオフィスの鍵を彼女に渡した。彼女はビジネスだけでなく、父の人生の仕事を引き継いだ。",
+    "particle_explain": "OVERの「移転」— 支配権が向こう側の人に渡る"
   },
   {
     "id": "give_in",
@@ -437,7 +707,12 @@
     "meaning_ja": "譲歩する・屈する",
     "example": "After hours of arguing, he finally gave in.",
     "example_ja": "何時間も議論した後、彼はついに譲歩した。",
-    "choices": ["譲歩する・屈する", "与える", "入れる", "あきらめる"]
+    "choices": ["譲歩する・屈する", "与える", "入れる", "あきらめる"],
+    "particle": "into",
+    "sense": "entry",
+    "scene": "The child begs for ice cream for the twentieth time, pulling at your sleeve. You swore you'd say no today. But those puppy eyes are too powerful — you give in and order two scoops.",
+    "scene_ja": "子供が20回目のアイスクリームのおねだり、袖を引っ張る。今日は絶対ダメと決めていたのに。でもあの子犬のような目が強すぎて、屈してダブルスクープを注文する。",
+    "particle_explain": "INTOの「突入」— 相手の要求の中に折れて入る"
   },
   {
     "id": "throw_away",
@@ -445,7 +720,12 @@
     "meaning_ja": "捨てる",
     "example": "Don't throw away that receipt.",
     "example_ja": "そのレシートを捨てないで。",
-    "choices": ["捨てる", "投げる", "飛ばす", "片付ける"]
+    "choices": ["捨てる", "投げる", "飛ばす", "片付ける"],
+    "particle": "away",
+    "sense": "disappearance",
+    "scene": "You're doing spring cleaning and find your old love letters in a shoebox. Your hand hovers over the trash can. You almost throw them away, but at the last second, you put them back.",
+    "scene_ja": "春の大掃除で靴箱に入った昔のラブレターを見つける。手がゴミ箱の上で止まる。捨てかけるが、最後の最後で元に戻す。",
+    "particle_explain": "AWAYの「消失」— 手元から遠くへ放り投げて消す"
   },
   {
     "id": "fill_in",
@@ -453,7 +733,12 @@
     "meaning_ja": "記入する",
     "example": "Please fill in this form.",
     "example_ja": "この用紙に記入してください。",
-    "choices": ["記入する", "満たす", "埋める", "入れる"]
+    "choices": ["記入する", "満たす", "埋める", "入れる"],
+    "particle": "into",
+    "sense": "entry",
+    "scene": "You're at the hospital reception, hands still shaking from the accident. The nurse hands you a clipboard with ten pages of forms and asks you to fill in every blank — name, date, insurance.",
+    "scene_ja": "事故の後、まだ手が震えたまま病院の受付にいる。看護師がクリップボードに挟んだ10ページの用紙を渡し、全ての空欄に記入するよう求める。名前、日付、保険。",
+    "particle_explain": "INTOの「中に入れる」— 空白の中に情報を埋め込む"
   },
   {
     "id": "hand_in",
@@ -461,7 +746,12 @@
     "meaning_ja": "提出する",
     "example": "Don't forget to hand in your homework.",
     "example_ja": "宿題を提出するのを忘れないで。",
-    "choices": ["提出する", "渡す", "手に入れる", "返す"]
+    "choices": ["提出する", "渡す", "手に入れる", "返す"],
+    "particle": "into",
+    "sense": "entry",
+    "scene": "The deadline is in five minutes. Your essay is still printing, page by agonizing page. You grab the warm sheets and sprint down the hallway to hand in your paper with seconds to spare.",
+    "scene_ja": "締め切りまであと5分。エッセイがまだ一枚ずつもどかしくプリント中。温かい紙を掴み、廊下を全力で走り、残り数秒でレポートを提出する。",
+    "particle_explain": "INTOの「中へ」— 先生の手元（管理下）に入れる"
   },
   {
     "id": "hold_on",
@@ -469,7 +759,12 @@
     "meaning_ja": "待つ・しっかりつかまる",
     "example": "Hold on, I'll be right back.",
     "example_ja": "待って、すぐ戻るから。",
-    "choices": ["待つ・しっかりつかまる", "持つ", "抱きしめる", "放す"]
+    "choices": ["待つ・しっかりつかまる", "持つ", "抱きしめる", "放す"],
+    "particle": "on",
+    "sense": "continuation",
+    "scene": "The roller coaster clicks to the top of the highest drop. Your knuckles are white. The operator's voice crackles: hold on tight — and then the world falls away beneath you.",
+    "scene_ja": "ジェットコースターが最高地点の頂上までカチカチと上がる。指の関節が白くなる。オペレーターの声がガリガリと響く。しっかりつかまって。そして世界が足元から消える。",
+    "particle_explain": "ONの「継続」— 今の状態にくっついたまま離さない"
   },
   {
     "id": "move_on",
@@ -477,7 +772,12 @@
     "meaning_ja": "先へ進む・気持ちを切り替える",
     "example": "It's time to move on and forget the past.",
     "example_ja": "もう先に進んで過去を忘れる時だ。",
-    "choices": ["先へ進む・気持ちを切り替える", "引っ越す", "動く", "戻る"]
+    "choices": ["先へ進む・気持ちを切り替える", "引っ越す", "動く", "戻る"],
+    "particle": "on",
+    "sense": "continuation",
+    "scene": "The old photo still sits on your desk — a reminder of what was. One day, you put it in a drawer. Not to forget, but to finally move on and start the next chapter of your life.",
+    "scene_ja": "古い写真がまだ机の上にある。かつての思い出。ある日、それを引き出しにしまう。忘れるためではなく、ようやく先へ進み、人生の次の章を始めるために。",
+    "particle_explain": "ONの「継続」— 立ち止まらず前へ進み続ける"
   },
   {
     "id": "check_in",
@@ -485,7 +785,12 @@
     "meaning_ja": "チェックインする",
     "example": "We need to check in at the hotel by 3 p.m.",
     "example_ja": "午後3時までにホテルにチェックインする必要がある。",
-    "choices": ["チェックインする", "確認する", "調べる", "チェックアウトする"]
+    "choices": ["チェックインする", "確認する", "調べる", "チェックアウトする"],
+    "particle": "into",
+    "sense": "entry",
+    "scene": "After 14 hours of flying, your legs are numb and your eyes burn. The hotel lobby feels like heaven. You check in, get the room key, and collapse onto the softest bed you've ever felt.",
+    "scene_ja": "14時間のフライトの後、足は痺れ目は焼けるよう。ホテルのロビーが天国に感じる。チェックインし、ルームキーを受け取り、人生で一番柔らかいベッドに倒れ込む。",
+    "particle_explain": "INTOの「入場」— 施設の管理システムの中に入る"
   },
   {
     "id": "check_out",
@@ -493,7 +798,12 @@
     "meaning_ja": "チェックアウトする・見てみる",
     "example": "Check out this cool website!",
     "example_ja": "このかっこいいウェブサイト見てみて！",
-    "choices": ["チェックアウトする・見てみる", "確認する", "出る", "調べる"]
+    "choices": ["チェックアウトする・見てみる", "確認する", "出る", "調べる"],
+    "particle": "out",
+    "sense": "visibility",
+    "scene": "Your friend grabs your arm and points excitedly at a street performer doing backflips. She says you have to check out this guy — and he's the most incredible acrobat you've ever seen.",
+    "scene_ja": "友達があなたの腕を掴み、バク転をしているストリートパフォーマーを興奮して指さす。この人を見てと言われ、今まで見た中で最も信じられないアクロバットだった。",
+    "particle_explain": "OUTの「可視化」— 外に目を向けて確認する"
   },
   {
     "id": "sign_up",
@@ -501,7 +811,12 @@
     "meaning_ja": "登録する・申し込む",
     "example": "I signed up for a yoga class.",
     "example_ja": "ヨガのクラスに申し込んだ。",
-    "choices": ["登録する・申し込む", "サインする", "書く", "辞める"]
+    "choices": ["登録する・申し込む", "サインする", "書く", "辞める"],
+    "particle": "up",
+    "sense": "completion",
+    "scene": "The marathon poster has been staring at you from the gym wall for weeks. Today, heart pounding, you finally walk to the desk and sign up — there's no backing out now.",
+    "scene_ja": "ジムの壁のマラソンのポスターが何週間もこちらを見つめている。今日、心臓をバクバクさせながらついに受付に行き、申し込む。もう後戻りはできない。",
+    "particle_explain": "UPの「完了」— 名前を書いて登録を完了させる"
   },
   {
     "id": "log_in",
@@ -509,7 +824,12 @@
     "meaning_ja": "ログインする",
     "example": "You need to log in to access your account.",
     "example_ja": "アカウントにアクセスするにはログインが必要です。",
-    "choices": ["ログインする", "記録する", "入る", "ログアウトする"]
+    "choices": ["ログインする", "記録する", "入る", "ログアウトする"],
+    "particle": "into",
+    "sense": "entry",
+    "scene": "You haven't checked your old email in five years. You nervously type the password, praying you remember it. You log in on the first try — and find 12,847 unread messages waiting.",
+    "scene_ja": "5年間古いメールを確認していない。パスワードを覚えているか祈りながら緊張して入力する。一発でログインに成功。12,847件の未読メッセージが待っている。",
+    "particle_explain": "INTOの「入場」— デジタル空間の中に入る"
   },
   {
     "id": "back_up",
@@ -517,7 +837,12 @@
     "meaning_ja": "バックアップする・支持する",
     "example": "Make sure to back up your files regularly.",
     "example_ja": "定期的にファイルをバックアップしてください。",
-    "choices": ["バックアップする・支持する", "戻る", "後退する", "逆転する"]
+    "choices": ["バックアップする・支持する", "戻る", "後退する", "逆転する"],
+    "particle": "back",
+    "sense": "return",
+    "scene": "Your laptop makes a horrifying clicking sound and the screen goes black. Your thesis — two years of work — is on that hard drive. If only you had backed up your files yesterday.",
+    "scene_ja": "ノートパソコンが恐ろしいカチカチ音を立て、画面が真っ暗に。論文、2年分の研究がそのハードディスクに。昨日ファイルをバックアップしていれば。",
+    "particle_explain": "BACKの「予備」— データのコピーを安全な場所に戻しておく"
   },
   {
     "id": "break_down",
@@ -525,7 +850,12 @@
     "meaning_ja": "故障する・崩壊する",
     "example": "My car broke down on the highway.",
     "example_ja": "高速道路で車が故障した。",
-    "choices": ["故障する・崩壊する", "壊す", "分ける", "落ちる"]
+    "choices": ["故障する・崩壊する", "壊す", "分ける", "落ちる"],
+    "particle": "down",
+    "sense": "failure",
+    "scene": "You're driving through the desert at midnight, miles from anywhere. Steam pours from the hood. Your car breaks down in total darkness — no phone signal, no passing cars.",
+    "scene_ja": "真夜中に何もない砂漠を走っている。ボンネットから蒸気が噴き出す。真っ暗闇の中で車が故障する。電波なし、通りかかる車もなし。",
+    "particle_explain": "DOWNの「崩壊」— 機能が落ちて動かなくなる"
   },
   {
     "id": "come_up",
@@ -533,7 +863,12 @@
     "meaning_ja": "（話題などが）出てくる",
     "example": "Something important came up at the last minute.",
     "example_ja": "最後の瞬間に重要なことが出てきた。",
-    "choices": ["（話題などが）出てくる", "上がる", "近づく", "到着する"]
+    "choices": ["（話題などが）出てくる", "上がる", "近づく", "到着する"],
+    "particle": "up",
+    "sense": "appearance",
+    "scene": "You're about to leave the office for a rare Friday evening out. Your phone buzzes — an urgent problem has come up and your weekend plans evaporate instantly.",
+    "scene_ja": "珍しい金曜の夜の外出のためにオフィスを出ようとしている。電話が震える。緊急の問題が発生し、週末の計画が一瞬で消える。",
+    "particle_explain": "UPの「出現」— 予期せず下から浮かび上がってくる"
   },
   {
     "id": "fall_behind",
@@ -541,7 +876,12 @@
     "meaning_ja": "遅れる",
     "example": "Don't fall behind in your studies.",
     "example_ja": "勉強に遅れないようにしなさい。",
-    "choices": ["遅れる", "倒れる", "後ろに下がる", "追い越す"]
+    "choices": ["遅れる", "倒れる", "後ろに下がる", "追い越す"],
+    "particle": "back",
+    "sense": "reversal",
+    "scene": "Everyone in class is on chapter 12, but you're still stuck on chapter 8. You were sick for a week and now you've fallen behind — the textbook feels like a foreign language.",
+    "scene_ja": "クラスの皆は第12章なのに、自分はまだ第8章で止まっている。1週間病気で休み、すっかり遅れてしまった。教科書が外国語のように感じる。",
+    "particle_explain": "BACKの「後退」— 集団の後ろに落ちて離される"
   },
   {
     "id": "get_away",
@@ -549,7 +889,12 @@
     "meaning_ja": "逃げる・離れる",
     "example": "The thief got away before the police arrived.",
     "example_ja": "警察が来る前に泥棒は逃げた。",
-    "choices": ["逃げる・離れる", "到着する", "近づく", "手に入れる"]
+    "choices": ["逃げる・離れる", "到着する", "近づく", "手に入れる"],
+    "particle": "away",
+    "sense": "distance",
+    "scene": "The alarm blares and red lights flash. The bank robber sprints toward a waiting motorcycle. He gets away into the night — vanishing before anyone can read his license plate.",
+    "scene_ja": "アラームが鳴り響き、赤いランプが点滅する。銀行強盗が待機中のバイクに向かって全力疾走する。誰もナンバーを読む前に夜の闇の中へ逃げ去る。",
+    "particle_explain": "AWAYの「離脱」— その場から遠くへ離れて消える"
   },
   {
     "id": "give_back",
@@ -557,7 +902,12 @@
     "meaning_ja": "返す",
     "example": "Can you give back the book I lent you?",
     "example_ja": "貸した本を返してくれますか？",
-    "choices": ["返す", "あげる", "もらう", "借りる"]
+    "choices": ["返す", "あげる", "もらう", "借りる"],
+    "particle": "back",
+    "sense": "return",
+    "scene": "You lent your favorite jacket to a friend three months ago. Every time you see them, they're wearing it. Finally, you gather the courage to ask them to give it back.",
+    "scene_ja": "3ヶ月前にお気に入りのジャケットを友達に貸した。会うたびに着ている。ついに勇気を出して返してと頼む。",
+    "particle_explain": "BACKの「帰還」— 借りたものを元の持ち主に戻す"
   },
   {
     "id": "go_ahead",
@@ -565,7 +915,12 @@
     "meaning_ja": "先に進む・どうぞ",
     "example": "Go ahead, I'll catch up later.",
     "example_ja": "先に行って、後で追いつくから。",
-    "choices": ["先に進む・どうぞ", "前に行く", "戻る", "止まる"]
+    "choices": ["先に進む・どうぞ", "前に行く", "戻る", "止まる"],
+    "particle": "on",
+    "sense": "continuation",
+    "scene": "Your friend hesitates at the door of the new restaurant, unsure about trying something adventurous. You smile and say go ahead — the worst that can happen is a funny story.",
+    "scene_ja": "友達が新しいレストランのドアで躊躇し、冒険的なものを試すか迷っている。あなたは微笑んでどうぞと言う。最悪でも面白い話のネタになるだけだ。",
+    "particle_explain": "ONの「進行」— 前方に向かって進み続ける"
   },
   {
     "id": "hang_up",
@@ -573,7 +928,12 @@
     "meaning_ja": "電話を切る",
     "example": "She hung up the phone angrily.",
     "example_ja": "彼女は怒って電話を切った。",
-    "choices": ["電話を切る", "掛ける", "ぶら下げる", "干す"]
+    "choices": ["電話を切る", "掛ける", "ぶら下げる", "干す"],
+    "particle": "up",
+    "sense": "completion",
+    "scene": "The argument on the phone gets louder and louder. Neither side is listening anymore. Then, mid-sentence, she hangs up — and the sudden silence is deafening.",
+    "scene_ja": "電話での言い争いがどんどん激しくなる。どちらももう聞いていない。そして文の途中で彼女が電話を切る。突然の沈黙が耳をつんざく。",
+    "particle_explain": "UPの「完了」— 受話器を戻して通話を終了させる"
   },
   {
     "id": "hurry_up",
@@ -581,7 +941,12 @@
     "meaning_ja": "急ぐ",
     "example": "Hurry up or we'll miss the train!",
     "example_ja": "急がないと電車に乗り遅れるよ！",
-    "choices": ["急ぐ", "走る", "遅れる", "焦る"]
+    "choices": ["急ぐ", "走る", "遅れる", "焦る"],
+    "particle": "up",
+    "sense": "completion",
+    "scene": "The train leaves in two minutes and you're still tying your shoes. Your partner is already at the door, keys in hand, yelling at you to hurry up — you've never run so fast in slippers.",
+    "scene_ja": "電車が2分後に出るのにまだ靴紐を結んでいる。パートナーはもう鍵を持ってドアの前で、急いでと叫んでいる。スリッパであんなに走ったのは初めてだ。",
+    "particle_explain": "UPの「完了」— 速度を上げて行動を完了させる"
   },
   {
     "id": "keep_on",
@@ -589,7 +954,12 @@
     "meaning_ja": "続ける",
     "example": "Keep on trying, you'll get it eventually.",
     "example_ja": "続けて、最終的にはできるようになるよ。",
-    "choices": ["続ける", "保つ", "維持する", "守る"]
+    "choices": ["続ける", "保つ", "維持する", "守る"],
+    "particle": "on",
+    "sense": "continuation",
+    "scene": "The guitar sounds terrible — every chord buzzes, every note is wrong. Your fingertips are raw and bleeding. But something inside says keep on practicing, and one day the music finally flows.",
+    "scene_ja": "ギターの音はひどい。コードはビビり、音は全て外れている。指先は擦りむけて血が出ている。でも心の中の何かが練習を続けろと言い、ある日ついに音楽が流れ出す。",
+    "particle_explain": "ONの「継続」— やめずにそのまま続ける"
   },
   {
     "id": "knock_out",
@@ -597,7 +967,12 @@
     "meaning_ja": "ノックアウトする・意識を失わせる",
     "example": "The boxer knocked out his opponent in round two.",
     "example_ja": "ボクサーは2ラウンドで相手をノックアウトした。",
-    "choices": ["ノックアウトする・意識を失わせる", "叩く", "壊す", "倒す"]
+    "choices": ["ノックアウトする・意識を失わせる", "叩く", "壊す", "倒す"],
+    "particle": "out",
+    "sense": "extinction",
+    "scene": "The underdog boxer has been losing every round. Blood drips from his eyebrow. Then in round eight, one perfect left hook knocks out the champion — the crowd erupts in disbelief.",
+    "scene_ja": "劣勢のボクサーは毎ラウンド負けている。眉から血が滴る。そして8ラウンド、完璧な左フックがチャンピオンをノックアウトする。観客が信じられないと爆発する。",
+    "particle_explain": "OUTの「消滅」— 意識を吹き飛ばして消す"
   },
   {
     "id": "leave_out",
@@ -605,7 +980,12 @@
     "meaning_ja": "省く・除外する",
     "example": "Don't leave out any important details.",
     "example_ja": "重要な詳細を省かないでください。",
-    "choices": ["省く・除外する", "出る", "残す", "忘れる"]
+    "choices": ["省く・除外する", "出る", "残す", "忘れる"],
+    "particle": "out",
+    "sense": "exclusion",
+    "scene": "The team photo hangs in the hallway with everyone smiling — except your face is missing. They left you out of the picture, and you feel invisible for the rest of the day.",
+    "scene_ja": "廊下にチームの集合写真が飾られ、全員が微笑んでいる。でもあなたの顔がない。写真から除外され、その日はずっと透明人間になった気分だ。",
+    "particle_explain": "OUTの「排除」— グループの外に置いて入れない"
   },
   {
     "id": "let_down",
@@ -613,7 +993,12 @@
     "meaning_ja": "がっかりさせる",
     "example": "I don't want to let you down.",
     "example_ja": "あなたをがっかりさせたくない。",
-    "choices": ["がっかりさせる", "下ろす", "許す", "放す"]
+    "choices": ["がっかりさせる", "下ろす", "許す", "放す"],
+    "particle": "down",
+    "sense": "failure",
+    "scene": "Your daughter practiced her speech for weeks and asked you to be in the front row. But work ran late, and you arrived after it was over. The look on her face when she says you let her down breaks your heart.",
+    "scene_ja": "娘は何週間もスピーチの練習をし、最前列にいてと頼んだ。でも仕事が長引き、終わった後に着いた。がっかりさせたと言う娘の表情が胸を引き裂く。",
+    "particle_explain": "DOWNの「低下」— 期待を下に落として裏切る"
   },
   {
     "id": "pay_back",
@@ -621,7 +1006,12 @@
     "meaning_ja": "返済する・仕返しする",
     "example": "I'll pay you back next week.",
     "example_ja": "来週返すよ。",
-    "choices": ["返済する・仕返しする", "支払う", "もらう", "借りる"]
+    "choices": ["返済する・仕返しする", "支払う", "もらう", "借りる"],
+    "particle": "back",
+    "sense": "return",
+    "scene": "Your friend lent you money when you were broke and never once mentioned it. Years later, you land your dream job. The first thing you do is pay them back — with interest and a thank-you dinner.",
+    "scene_ja": "お金がない時に友達がお金を貸してくれ、一度も催促しなかった。数年後、夢の仕事に就く。最初にしたのは返済すること。利子とお礼のディナー付きで。",
+    "particle_explain": "BACKの「返還」— 借りたものを元の持ち主に戻す"
   },
   {
     "id": "pull_off",
@@ -629,7 +1019,12 @@
     "meaning_ja": "成し遂げる・やってのける",
     "example": "She managed to pull off the impossible.",
     "example_ja": "彼女は不可能なことをやってのけた。",
-    "choices": ["成し遂げる・やってのける", "引く", "脱ぐ", "外す"]
+    "choices": ["成し遂げる・やってのける", "引く", "脱ぐ", "外す"],
+    "particle": "off",
+    "sense": "completion",
+    "scene": "Nobody believed she could organize a charity concert in just two weeks. No venue, no budget, no sponsors. Somehow, she pulled it off — 500 people showed up and they raised a fortune.",
+    "scene_ja": "たった2週間でチャリティーコンサートを企画できると誰も信じなかった。会場なし、予算なし、スポンサーなし。でもなぜかやってのけた。500人が来て、大金を集めた。",
+    "particle_explain": "OFFの「完了」— 困難なことをもぎ取るように成し遂げる"
   },
   {
     "id": "put_off",
@@ -637,7 +1032,12 @@
     "meaning_ja": "延期する",
     "example": "Let's put off the meeting until next week.",
     "example_ja": "会議を来週に延期しよう。",
-    "choices": ["延期する", "消す", "置く", "外す"]
+    "choices": ["延期する", "消す", "置く", "外す"],
+    "particle": "off",
+    "sense": "separation",
+    "scene": "The dentist appointment has been on your calendar for three months. Every time it gets close, you find an excuse. You've put it off four times now — and your tooth is getting worse.",
+    "scene_ja": "歯医者の予約が3ヶ月前からカレンダーにある。近づくたびに言い訳を見つける。もう4回延期した。そして歯はどんどん悪くなっている。",
+    "particle_explain": "OFFの「離脱」— 予定を今から切り離して遠くへ押しやる"
   },
   {
     "id": "rule_out",
@@ -645,7 +1045,12 @@
     "meaning_ja": "除外する・可能性を排除する",
     "example": "We can't rule out the possibility of rain.",
     "example_ja": "雨の可能性を排除できない。",
-    "choices": ["除外する・可能性を排除する", "支配する", "決める", "線を引く"]
+    "choices": ["除外する・可能性を排除する", "支配する", "決める", "線を引く"],
+    "particle": "out",
+    "sense": "exclusion",
+    "scene": "The detective examines the crime scene, eliminating suspects one by one. Fingerprints don't match, alibis check out. She can't rule out the victim's brother — he has no alibi at all.",
+    "scene_ja": "刑事が犯行現場を調べ、容疑者を一人ずつ消していく。指紋は一致せず、アリバイは確認済み。被害者の兄だけは除外できない。彼にはアリバイが全くない。",
+    "particle_explain": "OUTの「排除」— 可能性のリストから線を引いて外に出す"
   },
   {
     "id": "settle_down",
@@ -653,7 +1058,12 @@
     "meaning_ja": "落ち着く・定住する",
     "example": "After traveling for years, she finally settled down.",
     "example_ja": "何年も旅をした後、彼女はようやく定住した。",
-    "choices": ["落ち着く・定住する", "座る", "沈む", "解決する"]
+    "choices": ["落ち着く・定住する", "座る", "沈む", "解決する"],
+    "particle": "down",
+    "sense": "settling",
+    "scene": "She backpacked through 30 countries in her twenties, never staying anywhere longer than a month. Then she found a small coastal town that felt like home and settled down — her wandering heart finally at peace.",
+    "scene_ja": "20代で30ヶ国をバックパックで旅し、どこにも1ヶ月以上いなかった。そしてある小さな海沿いの町が故郷のように感じられ、定住した。放浪していた心がようやく安らぐ。",
+    "particle_explain": "DOWNの「安定」— ふわふわしていたものが地面に降りて定着する"
   },
   {
     "id": "show_off",
@@ -661,7 +1071,12 @@
     "meaning_ja": "見せびらかす",
     "example": "He's always showing off his new car.",
     "example_ja": "彼はいつも新しい車を見せびらかしている。",
-    "choices": ["見せびらかす", "見せる", "出す", "現れる"]
+    "choices": ["見せびらかす", "見せる", "出す", "現れる"],
+    "particle": "off",
+    "sense": "separation",
+    "scene": "The kid does a triple backflip at the pool while everyone watches. He climbs out dripping wet with a huge grin — clearly showing off for the girl sitting on the edge.",
+    "scene_ja": "プールで皆が見ている中、その子が三回転バック宙をする。ずぶ濡れで満面の笑みを浮かべて上がってくる。明らかにプールサイドに座っている女の子に見せびらかしている。",
+    "particle_explain": "OFFの「放出」— 自分の能力を外に向かって放ち誇示する"
   },
   {
     "id": "shut_down",
@@ -669,7 +1084,12 @@
     "meaning_ja": "閉鎖する・シャットダウンする",
     "example": "The factory was shut down last year.",
     "example_ja": "その工場は去年閉鎖された。",
-    "choices": ["閉鎖する・シャットダウンする", "閉める", "消す", "止まる"]
+    "choices": ["閉鎖する・シャットダウンする", "閉める", "消す", "止まる"],
+    "particle": "down",
+    "sense": "failure",
+    "scene": "The factory whistle blows for the last time. Workers walk out carrying boxes of personal belongings, some in tears. The company shuts down after 50 years — taking 200 jobs with it.",
+    "scene_ja": "工場の笛が最後に鳴る。作業員たちが私物の箱を持って出てくる。涙を流す者もいる。50年の歴史ある会社が閉鎖し、200人の仕事が消える。",
+    "particle_explain": "DOWNの「停止」— 全ての機能を落として完全に止める"
   },
   {
     "id": "slow_down",
@@ -677,7 +1097,12 @@
     "meaning_ja": "速度を落とす",
     "example": "Slow down, you're driving too fast!",
     "example_ja": "速度を落として、速すぎるよ！",
-    "choices": ["速度を落とす", "遅れる", "止まる", "減る"]
+    "choices": ["速度を落とす", "遅れる", "止まる", "減る"],
+    "particle": "down",
+    "sense": "decrease",
+    "scene": "The speedometer reads 140 km/h and the road curves sharply ahead. Your passenger grabs the dashboard and screams. You slam the brake and slow down just in time to make the turn.",
+    "scene_ja": "スピードメーターが時速140kmを示し、前方で道が急カーブする。助手席の人がダッシュボードを掴んで叫ぶ。ブレーキを踏んで速度を落とし、ぎりぎりカーブを曲がれた。",
+    "particle_explain": "DOWNの「減少」— スピードを下方向に落とす"
   },
   {
     "id": "sort_out",
@@ -685,7 +1110,12 @@
     "meaning_ja": "整理する・解決する",
     "example": "I need to sort out my desk.",
     "example_ja": "机を整理しなければならない。",
-    "choices": ["整理する・解決する", "分類する", "選ぶ", "出す"]
+    "choices": ["整理する・解決する", "分類する", "選ぶ", "出す"],
+    "particle": "out",
+    "sense": "discovery",
+    "scene": "Your closet is a mountain of clothes — winter coats mixed with swimsuits, socks everywhere. You spend a whole Saturday sorting everything out, and suddenly you can actually find things again.",
+    "scene_ja": "クローゼットは衣服の山。冬のコートに水着が混ざり、靴下がそこら中に。土曜日を丸一日使って全てを整理すると、ようやく物が見つかるようになる。",
+    "particle_explain": "OUTの「明確化」— 混乱の中から秩序を引き出す"
   },
   {
     "id": "speak_up",
@@ -693,7 +1123,12 @@
     "meaning_ja": "はっきり言う・声を上げる",
     "example": "If you have an opinion, speak up!",
     "example_ja": "意見があるなら、はっきり言いなさい！",
-    "choices": ["はっきり言う・声を上げる", "話す", "叫ぶ", "黙る"]
+    "choices": ["はっきり言う・声を上げる", "話す", "叫ぶ", "黙る"],
+    "particle": "up",
+    "sense": "increase",
+    "scene": "The boss proposes a plan that everyone knows will fail, but the room stays silent. Your heart is pounding, but you take a breath and speak up — someone had to say it.",
+    "scene_ja": "上司が全員失敗するとわかっている計画を提案するが、部屋は沈黙。心臓がバクバクするが、深呼吸して声を上げる。誰かが言わなければならなかった。",
+    "particle_explain": "UPの「上昇」— 声のボリュームと勇気を上げる"
   },
   {
     "id": "stand_for",
@@ -701,7 +1136,12 @@
     "meaning_ja": "〜を表す・〜の略である",
     "example": "What does NASA stand for?",
     "example_ja": "NASAは何の略ですか？",
-    "choices": ["〜を表す・〜の略である", "立つ", "我慢する", "支持する"]
+    "choices": ["〜を表す・〜の略である", "立つ", "我慢する", "支持する"],
+    "particle": "up",
+    "sense": "appearance",
+    "scene": "A child points at the letters \"UN\" on a blue flag and asks what they mean. The teacher kneels down and explains that those letters stand for United Nations — an organization that works for world peace.",
+    "scene_ja": "子供が青い旗の「UN」という文字を指さし、意味を尋ねる。先生が膝をついて、その文字は国際連合を表していると説明する。世界平和のために働く組織だと。",
+    "particle_explain": "UPの「表出」— 文字の背後に立って意味を代表する"
   },
   {
     "id": "stand_out",
@@ -709,7 +1149,12 @@
     "meaning_ja": "目立つ",
     "example": "Her bright red dress made her stand out.",
     "example_ja": "彼女の真っ赤なドレスは目立っていた。",
-    "choices": ["目立つ", "外に立つ", "立ち上がる", "耐える"]
+    "choices": ["目立つ", "外に立つ", "立ち上がる", "耐える"],
+    "particle": "out",
+    "sense": "visibility",
+    "scene": "A sea of black suits fills the conference room. Then she walks in wearing a bright yellow blazer with absolute confidence. She stands out like a sunflower in a field of shadows.",
+    "scene_ja": "黒いスーツの海が会議室を埋め尽くす。そこに彼女が鮮やかな黄色のブレザーで堂々と入ってくる。影の中のひまわりのように目立っている。",
+    "particle_explain": "OUTの「突出」— 群衆の外に飛び出して見える"
   },
   {
     "id": "stick_to",
@@ -717,7 +1162,12 @@
     "meaning_ja": "〜を守る・固執する",
     "example": "Let's stick to the original plan.",
     "example_ja": "元の計画を守ろう。",
-    "choices": ["〜を守る・固執する", "くっつく", "突き刺す", "続ける"]
+    "choices": ["〜を守る・固執する", "くっつく", "突き刺す", "続ける"],
+    "particle": "on",
+    "sense": "continuation",
+    "scene": "Everyone around you is jumping to the latest diet trend. Keto, paleo, intermittent fasting — a new one every month. But you decided to stick to your simple plan, and it's the only thing that actually worked.",
+    "scene_ja": "周りの人は皆、最新のダイエットに飛びつく。ケト、パレオ、断食。毎月新しいもの。でも自分はシンプルな計画を守り続けた。実際に効果があったのはそれだけだった。",
+    "particle_explain": "ONの「接着」— くっついたまま離れない"
   },
   {
     "id": "take_on",
@@ -725,7 +1175,12 @@
     "meaning_ja": "引き受ける・雇う",
     "example": "She decided to take on more responsibility.",
     "example_ja": "彼女はより多くの責任を引き受けることにした。",
-    "choices": ["引き受ける・雇う", "持っていく", "着る", "脱ぐ"]
+    "choices": ["引き受ける・雇う", "持っていく", "着る", "脱ぐ"],
+    "particle": "on",
+    "sense": "activation",
+    "scene": "The project is a disaster — three people just quit. Nobody wants to touch it. She raises her hand in the meeting and takes on the challenge that everyone else ran from.",
+    "scene_ja": "プロジェクトは大惨事。3人が辞めたばかり。誰も手を出したがらない。彼女が会議で手を挙げ、皆が逃げた挑戦を引き受ける。",
+    "particle_explain": "ONの「加算」— 自分の肩に新たな荷物を載せる"
   },
   {
     "id": "take_up",
@@ -733,7 +1188,12 @@
     "meaning_ja": "始める（趣味など）・占める",
     "example": "I've decided to take up painting.",
     "example_ja": "絵を描き始めることにした。",
-    "choices": ["始める（趣味など）・占める", "持ち上げる", "取る", "やめる"]
+    "choices": ["始める（趣味など）・占める", "持ち上げる", "取る", "やめる"],
+    "particle": "up",
+    "sense": "increase",
+    "scene": "After retiring, he felt lost — every day the same empty routine. Then his granddaughter gave him a watercolor set. He took up painting at 70, and his work now hangs in a local gallery.",
+    "scene_ja": "退職後、毎日同じ空虚な日課で方向を見失っていた。そこで孫娘が水彩絵の具セットをくれた。70歳で絵を始め、今では作品が地元のギャラリーに飾られている。",
+    "particle_explain": "UPの「開始」— 新しい活動を拾い上げて始める"
   },
   {
     "id": "think_over",
@@ -741,7 +1201,12 @@
     "meaning_ja": "よく考える",
     "example": "Let me think over your proposal.",
     "example_ja": "あなたの提案をよく考えさせてください。",
-    "choices": ["よく考える", "考える", "思い出す", "忘れる"]
+    "choices": ["よく考える", "考える", "思い出す", "忘れる"],
+    "particle": "over",
+    "sense": "examination",
+    "scene": "The job offer is incredible — double the salary, corner office, everything you dreamed of. But it means moving your family overseas. You ask for a week to think it over before giving your answer.",
+    "scene_ja": "その仕事のオファーは信じられないほど良い。給料は倍、角部屋のオフィス、夢に描いたすべて。でも家族を海外に移すことになる。答えを出す前に1週間よく考えさせてほしいと頼む。",
+    "particle_explain": "OVERの「検討」— 問題の上を何度も行き来して吟味する"
   },
   {
     "id": "try_on",
@@ -749,7 +1214,12 @@
     "meaning_ja": "試着する",
     "example": "Can I try on this jacket?",
     "example_ja": "このジャケットを試着してもいいですか？",
-    "choices": ["試着する", "試す", "着る", "脱ぐ"]
+    "choices": ["試着する", "試す", "着る", "脱ぐ"],
+    "particle": "on",
+    "sense": "activation",
+    "scene": "The dress in the window catches your eye — it's stunning but probably too expensive. You walk in just to try it on, and it fits like it was made for you. Your wallet is already crying.",
+    "scene_ja": "ショーウインドウのドレスに目が釘付けになる。素敵だけど高すぎるかも。試着するだけと入ると、まるでオーダーメイドのようにぴったり。財布がもう泣いている。",
+    "particle_explain": "ONの「装着」— 体の上に載せて試す"
   },
   {
     "id": "turn_down",
@@ -757,7 +1227,12 @@
     "meaning_ja": "断る・音量を下げる",
     "example": "She turned down the job offer.",
     "example_ja": "彼女はその仕事のオファーを断った。",
-    "choices": ["断る・音量を下げる", "回る", "下げる", "受け入れる"]
+    "choices": ["断る・音量を下げる", "回る", "下げる", "受け入れる"],
+    "particle": "down",
+    "sense": "decrease",
+    "scene": "The dream company finally calls with an offer. The salary is amazing, the team is perfect. But it means missing your daughter's childhood. With a heavy heart, you turn it down.",
+    "scene_ja": "憧れの会社がついにオファーの電話をくれる。給料は素晴らしく、チームも完璧。でもそれは娘の成長を見逃すことを意味する。重い気持ちで断る。",
+    "particle_explain": "DOWNの「拒否」— 提案の価値を下げて受け入れない"
   },
   {
     "id": "turn_up",
@@ -765,7 +1240,12 @@
     "meaning_ja": "現れる・音量を上げる",
     "example": "He turned up late to the meeting.",
     "example_ja": "彼は会議に遅れて現れた。",
-    "choices": ["現れる・音量を上げる", "回す", "上げる", "消える"]
+    "choices": ["現れる・音量を上げる", "回す", "上げる", "消える"],
+    "particle": "up",
+    "sense": "appearance",
+    "scene": "The birthday party has started and the guest of honor is nowhere to be seen. Thirty minutes late, he finally turns up at the door with flowers and the biggest cake anyone has ever seen.",
+    "scene_ja": "誕生日パーティーが始まったのに主役がどこにもいない。30分遅れで、ついに花と誰も見たことのない巨大なケーキを持ってドアに現れる。",
+    "particle_explain": "UPの「出現」— 姿を現して注目を集める"
   },
   {
     "id": "use_up",
@@ -773,7 +1253,12 @@
     "meaning_ja": "使い切る",
     "example": "We've used up all the printer paper.",
     "example_ja": "プリンター用紙を全部使い切った。",
-    "choices": ["使い切る", "使う", "上げる", "減らす"]
+    "choices": ["使い切る", "使う", "上げる", "減らす"],
+    "particle": "up",
+    "sense": "completion",
+    "scene": "The art project needs one more coat of blue paint. You squeeze the tube — nothing comes out. You've used up every last drop, and the art store is already closed.",
+    "scene_ja": "アート作品にあと一塗りの青い絵の具が必要。チューブを絞る。何も出てこない。最後の一滴まで使い切ってしまい、画材店はもう閉まっている。",
+    "particle_explain": "UPの「完了」— 全て使って完全にゼロにする"
   },
   {
     "id": "watch_out",
@@ -781,7 +1266,12 @@
     "meaning_ja": "気をつける",
     "example": "Watch out for cars when crossing the street.",
     "example_ja": "道を渡る時は車に気をつけて。",
-    "choices": ["気をつける", "見る", "監視する", "見張る"]
+    "choices": ["気をつける", "見る", "監視する", "見張る"],
+    "particle": "out",
+    "sense": "visibility",
+    "scene": "You're walking and texting, completely unaware of the world around you. A stranger grabs your arm and yells watch out — you were one step from walking into a busy intersection.",
+    "scene_ja": "歩きスマホで周りがまったく見えていない。見知らぬ人が腕を掴んで「気をつけて」と叫ぶ。あと一歩で交通量の多い交差点に踏み出すところだった。",
+    "particle_explain": "OUTの「外への注意」— 外の世界の危険に目を向ける"
   },
   {
     "id": "wear_out",
@@ -789,7 +1279,12 @@
     "meaning_ja": "すり減る・疲れさせる",
     "example": "These shoes are completely worn out.",
     "example_ja": "この靴は完全にすり減っている。",
-    "choices": ["すり減る・疲れさせる", "着る", "外に出す", "身につける"]
+    "choices": ["すり減る・疲れさせる", "着る", "外に出す", "身につける"],
+    "particle": "out",
+    "sense": "extinction",
+    "scene": "Those running shoes have carried you through three marathons, hundreds of morning jogs, and one unforgettable rainy run. The soles are paper-thin now — they're completely worn out, but you can't throw them away.",
+    "scene_ja": "あのランニングシューズは3つのマラソン、何百回もの朝のジョギング、そして忘れられない雨の中のランを共にした。ソールは紙のように薄い。完全にすり減ったが、捨てられない。",
+    "particle_explain": "OUTの「消耗」— 使い続けて中身が全て出尽くす"
   },
   {
     "id": "wipe_out",
@@ -797,7 +1292,12 @@
     "meaning_ja": "全滅させる・一掃する",
     "example": "The storm wiped out the entire crop.",
     "example_ja": "嵐が作物を全滅させた。",
-    "choices": ["全滅させる・一掃する", "拭く", "消す", "洗う"]
+    "choices": ["全滅させる・一掃する", "拭く", "消す", "洗う"],
+    "particle": "out",
+    "sense": "extinction",
+    "scene": "The farmer spent all spring planting rice across twenty fields. One massive typhoon in August destroyed everything. The storm wiped out his entire year's harvest in a single night.",
+    "scene_ja": "農家は春をかけて20枚の田んぼに稲を植えた。8月のたった一つの巨大台風が全てを破壊した。嵐が一夜にして一年分の収穫を全滅させた。",
+    "particle_explain": "OUTの「消滅」— 完全に拭い去って何も残さない"
   },
   {
     "id": "wrap_up",
@@ -805,7 +1305,12 @@
     "meaning_ja": "終わらせる・まとめる",
     "example": "Let's wrap up the meeting.",
     "example_ja": "会議を終わらせましょう。",
-    "choices": ["終わらせる・まとめる", "包む", "巻く", "開ける"]
+    "choices": ["終わらせる・まとめる", "包む", "巻く", "開ける"],
+    "particle": "up",
+    "sense": "completion",
+    "scene": "The meeting has been dragging on for two hours and everyone's eyes are glazing over. The manager finally claps her hands and says let's wrap this up — the whole room exhales with relief.",
+    "scene_ja": "会議が2時間もだらだら続き、全員の目がうつろになっている。マネージャーがついに手を叩いて、終わりにしましょうと言う。部屋中がほっと息をつく。",
+    "particle_explain": "UPの「完了」— 全てをまとめて包んで完成させる"
   },
   {
     "id": "zoom_in",
@@ -813,7 +1318,12 @@
     "meaning_ja": "拡大する",
     "example": "Zoom in on the map to see the street names.",
     "example_ja": "通り名を見るには地図を拡大してください。",
-    "choices": ["拡大する", "近づく", "縮小する", "急ぐ"]
+    "choices": ["拡大する", "近づく", "縮小する", "急ぐ"],
+    "particle": "into",
+    "sense": "entry",
+    "scene": "The satellite image shows an entire city from space — just a blur of gray and green. You zoom in closer and closer until you can actually see your own house and car in the driveway.",
+    "scene_ja": "衛星画像が宇宙から都市全体を映している。灰色と緑のぼやけた景色。どんどん拡大していくと、自分の家と車道に停めた車が実際に見える。",
+    "particle_explain": "INTOの「接近」— 対象の中に入り込むように近づく"
   },
   {
     "id": "opt_out",
@@ -821,7 +1331,12 @@
     "meaning_ja": "脱退する・辞退する",
     "example": "You can opt out of the email list anytime.",
     "example_ja": "いつでもメーリングリストから脱退できます。",
-    "choices": ["脱退する・辞退する", "選ぶ", "参加する", "申し込む"]
+    "choices": ["脱退する・辞退する", "選ぶ", "参加する", "申し込む"],
+    "particle": "out",
+    "sense": "exclusion",
+    "scene": "Your inbox is flooded with 50 promotional emails every day. You spend an entire evening clicking unsubscribe on every one, opting out of mailing lists you don't even remember joining.",
+    "scene_ja": "毎日50通の宣伝メールで受信箱が溢れている。一晩かけて全ての配信停止をクリックし、加入した記憶すらないメーリングリストから脱退していく。",
+    "particle_explain": "OUTの「離脱」— グループの外に自分を出す"
   },
   {
     "id": "phase_out",
@@ -829,7 +1344,12 @@
     "meaning_ja": "段階的に廃止する",
     "example": "The company is phasing out the old product line.",
     "example_ja": "会社は旧製品ラインを段階的に廃止している。",
-    "choices": ["段階的に廃止する", "導入する", "移行する", "始める"]
+    "choices": ["段階的に廃止する", "導入する", "移行する", "始める"],
+    "particle": "out",
+    "sense": "extinction",
+    "scene": "The beloved flip phone had loyal fans for decades. But smartphones changed everything. The manufacturer quietly phased out the old model, and an era ended without anyone really noticing.",
+    "scene_ja": "愛されたガラケーには何十年も忠実なファンがいた。でもスマートフォンが全てを変えた。メーカーは静かに旧モデルを段階的に廃止し、誰も気づかないうちに一つの時代が終わった。",
+    "particle_explain": "OUTの「消滅」— 少しずつ外に押し出して消していく"
   },
   {
     "id": "narrow_down",
@@ -837,7 +1357,12 @@
     "meaning_ja": "絞り込む",
     "example": "We narrowed down the candidates to three.",
     "example_ja": "候補者を3人に絞り込んだ。",
-    "choices": ["絞り込む", "狭くする", "減らす", "広げる"]
+    "choices": ["絞り込む", "狭くする", "減らす", "広げる"],
+    "particle": "down",
+    "sense": "decrease",
+    "scene": "200 resumes are stacked on the hiring manager's desk. After three rounds of interviews and tough decisions, she narrows them down to just three candidates — each one exceptional.",
+    "scene_ja": "採用マネージャーの机に200通の履歴書が積まれている。3回の面接と難しい判断の末、たった3人の候補者に絞り込む。全員が非凡な人材だ。",
+    "particle_explain": "DOWNの「減少」— 選択肢の幅を狭めて数を減らす"
   },
   {
     "id": "branch_out",
@@ -845,6 +1370,11 @@
     "meaning_ja": "事業を拡大する・新分野に進出する",
     "example": "The company branched out into online sales.",
     "example_ja": "その会社はオンライン販売に進出した。",
-    "choices": ["事業を拡大する・新分野に進出する", "枝分かれする", "広がる", "離れる"]
+    "choices": ["事業を拡大する・新分野に進出する", "枝分かれする", "広がる", "離れる"],
+    "particle": "out",
+    "sense": "distribution",
+    "scene": "The small bakery has been selling bread for 30 years on the same corner. One day the owner's daughter builds a website. They branch out into nationwide delivery, and orders pour in from every prefecture.",
+    "scene_ja": "小さなパン屋が同じ角で30年間パンを売ってきた。ある日オーナーの娘がウェブサイトを作る。全国配送に進出すると、全都道府県から注文が殺到する。",
+    "particle_explain": "OUTの「拡散」— 木の枝のように外へ広がっていく"
   }
 ]

@@ -5,6 +5,33 @@ export interface Verb {
   example: string;
   example_ja: string;
   choices: string[];
+  particle: string;
+  sense: string;
+  scene: string;
+  scene_ja: string;
+  particle_explain: string;
+}
+
+export interface ParticleSense {
+  id: string;
+  label: string;
+  label_en: string;
+  description: string;
+  visual: string;
+}
+
+export interface Particle {
+  id: string;
+  core_meaning: string;
+  core_meaning_ja: string;
+  senses: ParticleSense[];
+}
+
+export interface ParticleProgress {
+  particleId: string;
+  totalVerbs: number;
+  learnedVerbs: number;
+  reviewDue: number;
 }
 
 export interface Progress {
@@ -22,7 +49,7 @@ export interface Stats {
   value: number | string;
 }
 
-export type QuizState = 'loading' | 'ready' | 'question' | 'answered' | 'complete';
+export type AppPhase = 'loading' | 'particle-map' | 'particle-intro' | 'question' | 'answered' | 'complete';
 
 export interface QuizItem {
   verb: Verb;
