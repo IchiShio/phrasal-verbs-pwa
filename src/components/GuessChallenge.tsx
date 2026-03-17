@@ -124,14 +124,14 @@ export function GuessChallenge({
       {/* Scene (the story with blanked verb) */}
       <div
         ref={tilt.ref}
-        className="relative mb-6 p-5 border-l-[3px]"
+        className="relative mb-5 p-5 border-l-[3px]"
         style={{
           ...tilt.style,
           borderColor: 'var(--color-accent)',
           background: 'var(--color-surface-raised)',
         }}
       >
-        <p className="text-base leading-relaxed" style={{ color: 'var(--color-text-muted)' }}>
+        <p className="text-lg leading-[1.8]" style={{ color: 'var(--color-text)' }}>
           {blankedScene}
         </p>
         {showXP && xpGained > 0 && (
@@ -142,19 +142,21 @@ export function GuessChallenge({
         )}
       </div>
 
-      {/* Verb + particle hint */}
-      <div className="flex items-baseline gap-3 mb-6">
-        <span className="text-3xl italic" style={{ fontFamily: 'var(--font-display)' }}>
-          {item.verb.verb}
-        </span>
-        <span className="text-xs uppercase tracking-[0.15em] px-2 py-1" style={{
-          fontFamily: 'var(--font-mono)',
-          color: 'var(--color-accent)',
-          border: '1px solid var(--color-surface-border)',
-          background: 'var(--color-surface-raised)',
-        }}>
-          {particle.id.toUpperCase()} = {senseInfo?.label_en || particle.core_meaning}
-        </span>
+      {/* Verb + particle hint — more inviting layout */}
+      <div className="mb-6">
+        <div className="flex items-baseline gap-3 mb-1">
+          <span className="text-3xl italic" style={{ fontFamily: 'var(--font-display)' }}>
+            {item.verb.verb}
+          </span>
+        </div>
+        <div className="flex items-center gap-2">
+          <span className="text-sm" style={{ color: 'var(--color-accent)' }}>
+            {particle.id.toUpperCase()}
+          </span>
+          <span className="text-sm" style={{ color: 'var(--color-text-dim)' }}>
+            → {senseInfo?.label || particle.core_meaning_ja}
+          </span>
+        </div>
       </div>
 
       {/* 4 choices */}
@@ -192,7 +194,7 @@ export function GuessChallenge({
                 <span className="uppercase">{CHOICE_LABELS[i]}</span>
                 <span className="ml-0.5 opacity-40" style={{ fontSize: '0.6rem' }}>{CHOICE_KEYS[i]}</span>
               </span>
-              <span className="text-base relative z-10">{choice}</span>
+              <span className="text-lg relative z-10">{choice}</span>
             </button>
           );
         })}
@@ -200,22 +202,22 @@ export function GuessChallenge({
 
       {/* Particle explanation (post-answer) */}
       {state === 'answered' && showExplain && (
-        <div className="animate-reveal mb-6 p-4 border-t" style={{ borderColor: 'var(--color-accent)', background: 'var(--color-surface-raised)' }}>
-          <div className="flex items-center gap-2 mb-2">
-            <span className="text-[10px] uppercase tracking-[0.2em]" style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-accent)' }}>
-              Why {particle.id.toUpperCase()}?
+        <div className="animate-reveal mb-6 p-5 border-t-2" style={{ borderColor: 'var(--color-accent)', background: 'var(--color-surface-raised)' }}>
+          <div className="flex items-center gap-2 mb-3">
+            <span className="text-xs" style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-accent)' }}>
+              {particle.id.toUpperCase()}
             </span>
             {senseInfo && (
-              <span className="text-[10px] px-1.5 py-0.5" style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-text-dim)', border: '1px solid var(--color-surface-border)' }}>
-                {senseInfo.label_en}
+              <span className="text-sm" style={{ color: 'var(--color-text-muted)' }}>
+                → {senseInfo.label}
               </span>
             )}
           </div>
-          <p className="text-sm" style={{ color: 'var(--color-text-muted)' }}>
+          <p className="text-base leading-relaxed mb-3" style={{ color: 'var(--color-text)' }}>
             {item.verb.particle_explain}
           </p>
-          {/* Scene translation */}
-          <p className="text-xs mt-2 italic" style={{ color: 'var(--color-text-dim)', fontFamily: 'var(--font-display)' }}>
+          {/* Scene translation — prominent */}
+          <p className="text-sm leading-relaxed" style={{ color: 'var(--color-text-muted)' }}>
             {item.verb.scene_ja}
           </p>
         </div>
@@ -228,7 +230,7 @@ export function GuessChallenge({
             fontFamily: 'var(--font-mono)',
             color: isCorrect ? 'var(--color-correct)' : 'var(--color-wrong)',
           }}>
-            {isCorrect ? 'Correct' : `Incorrect — ${item.verb.choices[0]}`}
+            {isCorrect ? '正解！' : `不正解 — ${item.verb.choices[0]}`}
           </div>
           <button
             onClick={() => { setExiting(true); setTimeout(onNext, 300); }}

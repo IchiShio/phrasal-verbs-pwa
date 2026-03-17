@@ -16,20 +16,21 @@ export function ParticleMap({ particles, progressMap, recommendedId, streak, onS
     <div className="pt-6">
       {/* Header */}
       <div className="opacity-0 animate-reveal mb-8">
-        <p
-          className="text-xs uppercase tracking-[0.25em] mb-3"
-          style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-text-dim)' }}
-        >
-          {totalLearned}/{totalVerbs} verbs · {streak > 0 ? `🔥 ${streak}d` : ''}
-        </p>
         <h1
-          className="text-5xl leading-[1.05]"
+          className="text-4xl leading-[1.2] mb-2"
           style={{ fontFamily: 'var(--font-display)' }}
         >
           <span className="italic">Particle</span>{' '}
           <span style={{ color: 'var(--color-accent)' }}>Map</span>
         </h1>
-        <div className="w-12 h-[3px] mt-4" style={{ background: 'var(--color-accent)' }} />
+        <p className="text-base" style={{ color: 'var(--color-text-muted)' }}>
+          {totalLearned > 0
+            ? `${totalLearned}/${totalVerbs}語を学習中`
+            : 'パーティクルのパターンを学ぼう'
+          }
+          {streak > 0 && <span className="ml-2" style={{ color: 'var(--color-streak)' }}>🔥 {streak}日連続</span>}
+        </p>
+        <div className="w-10 h-[2px] mt-4" style={{ background: 'var(--color-accent)' }} />
       </div>
 
       {/* Recommended */}
